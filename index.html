@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rafael Ernesto Pino - Chief Technology Officer (CTO) | Enterprise Architecture, Innovation & AI Strategy">
+    <meta name="keywords" content="CTO, Chief Technology Officer, Enterprise Architecture, AI Strategy, Digital Transformation, Technology Leadership">
+    <meta name="author" content="Rafael Ernesto Pino">
+    <meta property="og:title" content="Rafael Ernesto Pino - CTO">
+    <meta property="og:description" content="Strategic Technology Leader | 26+ Years Transforming Business Through Innovation">
+    <meta property="og:type" content="website">
+    <title>Rafael Ernesto Pino | Chief Technology Officer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-color: #1a73e8;
+            --secondary-color: #34a853;
+            --text-dark: #202124;
+            --text-medium: #5f6368;
+            --text-light: #80868b;
+            --border-color: #dadce0;
+            --bg-light: #f8f9fa;
+            --bg-white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-white);
+            border-bottom: 1px solid var(--border-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .header-title {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .lang-selector {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .lang-btn {
+            padding: 6px 12px;
+            border: 1px solid var(--border-color);
+            background: var(--bg-white);
+            color: var(--text-medium);
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .lang-btn:hover {
+            background: var(--bg-light);
+            border-color: var(--primary-color);
+        }
+
+        .lang-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+
+        /* Profile Section */
+        .profile-section {
+            background: var(--bg-white);
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .profile-image-container {
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            border-radius: 8px;
+            object-fit: cover;
+            border: 2px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 0.875rem;
+            color: var(--text-medium);
+            line-height: 1.8;
+        }
+
+        .contact-info strong {
+            color: var(--text-dark);
+            display: block;
+            margin-top: 12px;
+            margin-bottom: 4px;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .profile-main h1 {
+            font-size: 2.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .profile-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-medium);
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+
+        .profile-summary {
+            font-size: 0.95rem;
+            color: var(--text-medium);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        /* Section */
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 24px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--primary-color);
+            display: inline-block;
+        }
+
+        /* Grid Layouts */
+        .two-column-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px 40px;
+        }
+
+        .competency-item {
+            margin-bottom: 16px;
+        }
+
+        .competency-item h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .competency-item p {
+            font-size: 0.875rem;
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        /* Experience Timeline */
+        .timeline-controls {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .timeline-toggle {
+            padding: 10px 24px;
+            background: var(--bg-white);
+            color: var(--primary-color);
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .timeline-toggle:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .experience-item {
+            margin-bottom: 32px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .timeline.collapsed .experience-item:nth-child(n+4) {
+            display: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 12px;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .experience-title {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .experience-company {
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+
+        .experience-period {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            white-space: nowrap;
+        }
+
+        .experience-description {
+            font-size: 0.9rem;
+            color: var(--text-medium);
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .experience-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--bg-light);
+            color: var(--text-medium);
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .skill-tag {
+            padding: 4px 10px;
+            background: var(--bg-light);
+            color: var(--text-dark);
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        /* Innovation Box */
+        .innovation-box {
+            background: linear-gradient(135deg, #e8f0fe 0%, #f8f9fa 100%);
+            border-left: 4px solid var(--primary-color);
+            padding: 24px;
+            border-radius: 4px;
+            margin-top: 24px;
+        }
+
+        .innovation-box h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .innovation-box p {
+            color: var(--text-medium);
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .innovation-box ul {
+            margin-left: 20px;
+            margin-bottom: 16px;
+        }
+
+        .innovation-box li {
+            color: var(--text-medium);
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .innovation-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .innovation-link:hover {
+            background: #1557b0;
+        }
+
+        /* Education Grid */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .education-item {
+            padding: 16px;
+            background: var(--bg-light);
+            border-radius: 4px;
+        }
+
+        .education-year {
+            color: var(--primary-color);
+            font-weight: 500;
+            font-size: 0.875rem;
+            margin-bottom: 8px;
+        }
+
+        .education-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .education-institution {
+            font-size: 0.875rem;
+            color: var(--text-medium);
+        }
+
+        /* Languages */
+        .languages-list {
+            display: flex;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .language-item {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .language-item h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+            margin-bottom: 4px;
+        }
+
+        .language-item p {
+            font-size: 0.875rem;
+            color: var(--text-medium);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--bg-light);
+            padding: 24px 0;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .profile-image-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .two-column-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .experience-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        /* Language visibility */
+        [data-lang="en"] .lang-es,
+        [data-lang="en"] .lang-pt,
+        [data-lang="es"] .lang-en,
+        [data-lang="es"] .lang-pt,
+        [data-lang="pt"] .lang-es,
+        [data-lang="pt"] .lang-en {
+            display: none;
+        }
+
+        /* Print Styles */
+        @media print {
+            .header, .timeline-controls, .lang-selector {
+                display: none;
+            }
+
+            .section {
+                page-break-inside: avoid;
+            }
+
+            .timeline.collapsed .experience-item {
+                display: block !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-title">Rafael Ernesto Pino | CTO</div>
+                <div class="lang-selector">
+                    <button class="lang-btn active" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="pt">PT</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-grid">
+                <div class="profile-image-container">
+                    <img src="profile.jpg" alt="Rafael Ernesto Pino" class="profile-image" onerror="this.src='https://ui-avatars.com/api/?name=Rafael+Pino&size=180&background=1a73e8&color=fff&bold=true'">
+
+                    <div class="contact-info">
+                        <strong>
+                            <span class="lang-es">Contacto</span>
+                            <span class="lang-en">Contact</span>
+                            <span class="lang-pt">Contato</span>
+                        </strong>
+                        +57 300 215 0908<br>
+                        <a href="mailto:repinor@gmail.com">repinor@gmail.com</a><br>
+                        <a href="https://linkedin.com/in/rafapino" target="_blank">linkedin.com/in/rafapino</a>
+
+                        <strong>
+                            <span class="lang-es">Ubicación</span>
+                            <span class="lang-en">Location</span>
+                            <span class="lang-pt">Localização</span>
+                        </strong>
+                        Bogotá, Colombia
+                    </div>
+                </div>
+
+                <div class="profile-main">
+                    <h1>Rafael Ernesto Pino</h1>
+                    <p class="profile-subtitle">
+                        <span class="lang-es">Chief Technology Officer (CTO)</span>
+                        <span class="lang-en">Chief Technology Officer (CTO)</span>
+                        <span class="lang-pt">Chief Technology Officer (CTO)</span>
+                    </p>
+                    <p class="profile-subtitle" style="font-size: 1rem; margin-top: -12px;">
+                        <span class="lang-es">Dirección de Tecnología · Arquitectura Empresarial · Innovación con IA</span>
+                        <span class="lang-en">Technology Leadership · Enterprise Architecture · AI Innovation</span>
+                        <span class="lang-pt">Direção de Tecnologia · Arquitetura Empresarial · Inovação com IA</span>
+                    </p>
+
+                    <div class="profile-summary">
+                        <p class="lang-es">
+                            Líder y gestor de Ingeniería con más de 26 años de experiencia en el diseño, implementación y liderazgo en la construcción de productos de software y soluciones empresariales. Me he convertido en experto en la transformación de requisitos de negocio en soluciones tecnológicas escalables y sostenibles.
+                        </p>
+                        <p class="lang-en">
+                            Engineering leader and manager with 26+ years of experience in design, implementation, and leadership in building software products and enterprise solutions. I have become an expert in transforming business requirements into scalable and sustainable technology solutions.
+                        </p>
+                        <p class="lang-pt">
+                            Líder e gestor de Engenharia com mais de 26 anos de experiência no design, implementação e liderança na construção de produtos de software e soluções empresariais. Tornei-me especialista na transformação de requisitos de negócio em soluções tecnológicas escaláveis e sustentáveis.
+                        </p>
+                    </div>
+
+                    <div class="profile-summary">
+                        <p class="lang-es">
+                            Hago especial énfasis en el liderazgo estratégico de equipos y personas, soy consciente del valor que tienen y lo que pueden aportar de manera profesional y técnica al éxito de un proyecto. Mi estilo de liderazgo se centra en la mentoría y el empoderamiento, permitiendo que los miembros del equipo evolucionen en líderes que puedan gestionar e innovar de manera independiente.
+                        </p>
+                        <p class="lang-en">
+                            I place special emphasis on strategic team and people leadership, being aware of the value they have and what they can contribute professionally and technically to project success. My leadership style focuses on mentoring and empowerment, enabling team members to evolve into leaders who can manage and innovate independently.
+                        </p>
+                        <p class="lang-pt">
+                            Faço especial ênfase na liderança estratégica de equipes e pessoas, sendo consciente do valor que têm e o que podem contribuir de maneira profissional e técnica ao sucesso de um projeto. Meu estilo de liderança se centra na mentoria e empoderamento, permitindo que os membros da equipe evoluam em líderes que possam gerenciar e inovar de maneira independente.
+                        </p>
+                    </div>
+
+                    <div class="profile-summary">
+                        <p class="lang-es">
+                            Me apasiona aprovechar la tecnología para resolver problemas complejos, optimizar operaciones y ofrecer resultados comerciales tangibles. Guío y gestiono decisiones técnicas, de personal y presupuestarias para asegurar que se alineen con el crecimiento estratégico y la sostenibilidad del negocio.
+                        </p>
+                        <p class="lang-en">
+                            I am passionate about leveraging technology to solve complex problems, optimize operations, and deliver tangible business results. I guide and manage technical, personnel, and budget decisions to ensure they align with strategic growth and business sustainability.
+                        </p>
+                        <p class="lang-pt">
+                            Sou apaixonado por aproveitar a tecnologia para resolver problemas complexos, otimizar operações e oferecer resultados comerciais tangíveis. Guio e gerencio decisões técnicas, de pessoal e orçamentárias para garantir que se alinhem com o crescimento estratégico e a sustentabilidade do negócio.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-es">Competencias Principales</span>
+                <span class="lang-en">Core Competencies</span>
+                <span class="lang-pt">Competências Principais</span>
+            </h2>
+
+            <div class="two-column-grid">
+                <div class="competency-item">
+                    <h3 class="lang-es">Arquitectura Empresarial y de Soluciones</h3>
+                    <h3 class="lang-en">Enterprise & Solution Architecture</h3>
+                    <h3 class="lang-pt">Arquitetura Empresarial e de Soluções</h3>
+                    <p class="lang-es">Diseño de arquitecturas de software e integración de sistemas. Microservicios, Arquitectura Hexagonal, Clean Architecture, DDD (Domain-Driven Design), EDA (Event-Driven Architecture).</p>
+                    <p class="lang-en">Software architecture design and systems integration. Microservices, Hexagonal Architecture, Clean Architecture, DDD (Domain-Driven Design), EDA (Event-Driven Architecture).</p>
+                    <p class="lang-pt">Design de arquiteturas de software e integração de sistemas. Microsserviços, Arquitetura Hexagonal, Clean Architecture, DDD (Domain-Driven Design), EDA (Event-Driven Architecture).</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">Plataformas Escalables y Resilientes</h3>
+                    <h3 class="lang-en">Scalable & Resilient Platforms</h3>
+                    <h3 class="lang-pt">Plataformas Escaláveis e Resilientes</h3>
+                    <p class="lang-es">Cloud-native architectures (AWS, Azure, GCP). CI/CD, observabilidad, disaster recovery, alta disponibilidad.</p>
+                    <p class="lang-en">Cloud-native architectures (AWS, Azure, GCP). CI/CD, observability, disaster recovery, high availability.</p>
+                    <p class="lang-pt">Arquiteturas cloud-native (AWS, Azure, GCP). CI/CD, observabilidade, disaster recovery, alta disponibilidade.</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">IA Aplicada a Productos y Procesos</h3>
+                    <h3 class="lang-en">AI Applied to Products & Processes</h3>
+                    <h3 class="lang-pt">IA Aplicada a Produtos e Processos</h3>
+                    <p class="lang-es">Más de 1 año de experiencia en IA aplicada. Diseño de agentes inteligentes, integración de LLMs, automatización de flujos de desarrollo, IA responsable y gobernada. Metodología SPIRAL para construcción de productos con IA.</p>
+                    <p class="lang-en">Over 1 year of applied AI experience. Intelligent agent design, LLM integration, development workflow automation, responsible and governed AI. SPIRAL methodology for AI product development.</p>
+                    <p class="lang-pt">Mais de 1 ano de experiência em IA aplicada. Design de agentes inteligentes, integração de LLMs, automação de fluxos de desenvolvimento, IA responsável e governada. Metodologia SPIRAL para construção de produtos com IA.</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">Metodologías y Procesos Ágiles</h3>
+                    <h3 class="lang-en">Agile Methodologies & Processes</h3>
+                    <h3 class="lang-pt">Metodologias e Processos Ágeis</h3>
+                    <p class="lang-es">Conocimiento profundo en Scrum, Kanban, SAFe. Implementación de prácticas ágiles a escala. Certified Scrum Master y Product Owner. Mejora continua e innovación en procesos TI.</p>
+                    <p class="lang-en">Deep knowledge in Scrum, Kanban, SAFe. Agile practices implementation at scale. Certified Scrum Master and Product Owner. Continuous improvement and IT process innovation.</p>
+                    <p class="lang-pt">Conhecimento profundo em Scrum, Kanban, SAFe. Implementação de práticas ágeis em escala. Certified Scrum Master e Product Owner. Melhoria contínua e inovação em processos TI.</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">Construcción y Liderazgo de Equipos</h3>
+                    <h3 class="lang-en">Team Building & Leadership</h3>
+                    <h3 class="lang-pt">Construção e Liderança de Equipes</h3>
+                    <p class="lang-es">Pipeline de liderazgo, mentoría de líderes técnicos, coaching. Formación de equipos de alto rendimiento. 350+ personas lideradas. Creación y formación de líderes.</p>
+                    <p class="lang-en">Leadership pipeline, technical leader mentoring, coaching. High-performance team formation. 350+ people led. Leader creation and development.</p>
+                    <p class="lang-pt">Pipeline de liderança, mentoria de líderes técnicos, coaching. Formação de equipes de alto desempenho. 350+ pessoas lideradas. Criação e formação de líderes.</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">Gestión de Ciclo de Vida de Productos</h3>
+                    <h3 class="lang-en">Product Lifecycle Management</h3>
+                    <h3 class="lang-pt">Gestão de Ciclo de Vida de Produtos</h3>
+                    <p class="lang-es">Product management, dirección de proyectos, CX/UX - Product Design, OKRs, gestión y mitigación de riesgos. Diseño de metodologías y procesos. Modelos de negocio.</p>
+                    <p class="lang-en">Product management, project direction, CX/UX - Product Design, OKRs, risk management and mitigation. Methodology and process design. Business models.</p>
+                    <p class="lang-pt">Product management, direção de projetos, CX/UX - Product Design, OKRs, gestão e mitigação de riscos. Design de metodologias e processos. Modelos de negócio.</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">Compromiso con Stakeholders</h3>
+                    <h3 class="lang-en">Stakeholder Engagement</h3>
+                    <h3 class="lang-pt">Comprometimento com Stakeholders</h3>
+                    <p class="lang-es">Alineación tecnología-negocio-producto. Negociación profesional. Gestión de expectativas. Comunicación ejecutiva.</p>
+                    <p class="lang-en">Technology-business-product alignment. Professional negotiation. Expectation management. Executive communication.</p>
+                    <p class="lang-pt">Alinhamento tecnologia-negócio-produto. Negociação profissional. Gestão de expectativas. Comunicação executiva.</p>
+                </div>
+
+                <div class="competency-item">
+                    <h3 class="lang-es">Transformación Digital</h3>
+                    <h3 class="lang-en">Digital Transformation</h3>
+                    <h3 class="lang-pt">Transformação Digital</h3>
+                    <p class="lang-es">Migración cloud, modernización de sistemas legacy, implementación CI/CD, DevOps, infraestructura como código.</p>
+                    <p class="lang-en">Cloud migration, legacy systems modernization, CI/CD implementation, DevOps, infrastructure as code.</p>
+                    <p class="lang-pt">Migração cloud, modernização de sistemas legacy, implementação CI/CD, DevOps, infraestrutura como código.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-es">Experiencia Profesional</span>
+                <span class="lang-en">Professional Experience</span>
+                <span class="lang-pt">Experiência Profissional</span>
+            </h2>
+
+            <div class="timeline-controls">
+                <button class="timeline-toggle" onclick="toggleTimeline()">
+                    <span class="toggle-text-expand lang-es">Ver Toda la Experiencia (26+ años)</span>
+                    <span class="toggle-text-expand lang-en">View Full Experience (26+ years)</span>
+                    <span class="toggle-text-expand lang-pt">Ver Toda a Experiência (26+ anos)</span>
+                    <span class="toggle-text-collapse lang-es" style="display:none;">Ver Menos</span>
+                    <span class="toggle-text-collapse lang-en" style="display:none;">View Less</span>
+                    <span class="toggle-text-collapse lang-pt" style="display:none;">Ver Menos</span>
+                </button>
+            </div>
+
+            <div class="timeline collapsed" id="timeline">
+                <!-- Grupo R5 -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">
+                                <span class="lang-es">Director de Tecnología</span>
+                                <span class="lang-en">Technology Director</span>
+                                <span class="lang-pt">Diretor de Tecnologia</span>
+                            </div>
+                            <div class="experience-company">Grupo R5</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Ene 2025 - Actual</span>
+                            <span class="lang-en">Jan 2025 - Present</span>
+                            <span class="lang-pt">Jan 2025 - Presente</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Gestión de equipos de Desarrollo, Infraestructura, DevOps, QA y Arquitectura en el sector de seguros. Aseguramiento y compliance. Gestión de ciberseguridad. Visión técnica de productos core (core de pólizas de seguros). Liderazgo y mentoría de equipos. Adopción estratégica de IA y diseño de agentes.</p>
+                        <p class="lang-en">Management of Development, Infrastructure, DevOps, QA, and Architecture teams in the insurance sector. Assurance and compliance. Cybersecurity management. Core product technical vision (insurance policy core). Team leadership and mentoring. Strategic AI adoption and agent design.</p>
+                        <p class="lang-pt">Gestão de equipes de Desenvolvimento, Infraestrutura, DevOps, QA e Arquitetura no setor de seguros. Garantia e compliance. Gestão de cibersegurança. Visão técnica de produtos core (core de apólices de seguros). Liderança e mentoria de equipes. Adoção estratégica de IA e design de agentes.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Insurance Core Platform</span>
+                        <span class="tag">AI Strategy</span>
+                        <span class="tag">Cybersecurity</span>
+                        <span class="tag">Compliance</span>
+                    </div>
+                </div>
+
+                <!-- TOGROOW (2023-2024) -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">CTO & Tech Advisor</div>
+                            <div class="experience-company">TOGROOW</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Ago 2023 - Ene 2024</span>
+                            <span class="lang-en">Aug 2023 - Jan 2024</span>
+                            <span class="lang-pt">Ago 2023 - Jan 2024</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Liderazgo del diseño de la arquitectura de software y la integración de sistemas para la última versión de la solución. Supervisión de la migración a la nube e implementación de prácticas de CI/CD. Liderazgo técnico garantizando la ejecución exitosa del proyecto.</p>
+                        <p class="lang-en">Leadership of software architecture design and systems integration for the latest solution version. Cloud migration oversight and CI/CD practices implementation. Technical leadership ensuring successful project execution.</p>
+                        <p class="lang-pt">Liderança do design da arquitetura de software e integração de sistemas para a última versão da solução. Supervisão da migração para a nuvem e implementação de práticas CI/CD. Liderança técnica garantindo execução bem-sucedida do projeto.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Cloud Migration</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">Architecture Redesign</span>
+                    </div>
+                </div>
+
+                <!-- DoubleVPartners -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technology Director</div>
+                            <div class="experience-company">DoubleVPartners</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Abr 2023 - Ago 2023</span>
+                            <span class="lang-en">Apr 2023 - Aug 2023</span>
+                            <span class="lang-pt">Abr 2023 - Ago 2023</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Encargado de los equipos de Desarrollo, Arquitectura y DevOps. Construcción de equipos y gestión técnica de portafolio de proyectos. Evaluación técnica del personal. Implementación de procesos de ingeniería y mejores prácticas. Desarrollo de líderes y modelo de liderazgo. Soporte de ventas. Innovación y construcción de conocimiento basado en IA. 15+ proyectos exitosos en 6 meses.</p>
+                        <p class="lang-en">In charge of Development, Architecture, and DevOps teams. Team building and technical project portfolio management. Technical staff evaluation. Engineering process implementation and best practices. Leader development and leadership model. Sales support. Innovation and AI-based knowledge building. 15+ successful projects in 6 months.</p>
+                        <p class="lang-pt">Encarregado das equipes de Desenvolvimento, Arquitetura e DevOps. Construção de equipes e gestão técnica de portfólio de projetos. Avaliação técnica do pessoal. Implementação de processos de engenharia e melhores práticas. Desenvolvimento de líderes e modelo de liderança. Suporte de vendas. Inovação e construção de conhecimento baseado em IA. 15+ projetos bem-sucedidos em 6 meses.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">15+ Projects</span>
+                        <span class="tag">AI Innovation</span>
+                        <span class="tag">Team Building</span>
+                    </div>
+                </div>
+
+                <!-- Ubanku -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">CTO & Co-Founder</div>
+                            <div class="experience-company">Ubanku</div>
+                        </div>
+                        <div class="experience-period">May 2022 - Apr 2023</div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Liderazgo en el desarrollo de soluciones técnicas con proveedor externo. Supervisión técnica de proveedores. Capacitación y evaluación del equipo fundador. Miembro del equipo fundador. Soporte técnico. Implementación de ERP y comercio electrónico. Diseño arquitectónico de solución de banking y e-commerce usando arquitectura basada en eventos y microservicios.</p>
+                        <p class="lang-en">Leadership in technical solutions development with external provider. Technical vendor oversight. Founding team training and evaluation. Founding team member. Technical support. ERP and e-commerce implementation. Banking and e-commerce solution architectural design using event-driven architecture and microservices.</p>
+                        <p class="lang-pt">Liderança no desenvolvimento de soluções técnicas com fornecedor externo. Supervisão técnica de fornecedores. Capacitação e avaliação da equipe fundadora. Membro da equipe fundadora. Suporte técnico. Implementação de ERP e comércio eletrônico. Design arquitetônico de solução de banking e e-commerce usando arquitetura baseada em eventos e microsserviços.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Event-Driven Architecture</span>
+                        <span class="tag">Microservices</span>
+                        <span class="tag">Fintech</span>
+                    </div>
+                </div>
+
+                <!-- Asesoftware -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Engineering Manager</div>
+                            <div class="experience-company">Asesoftware</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Mar 2021 - Feb 2022</span>
+                            <span class="lang-en">Mar 2021 - Feb 2022</span>
+                            <span class="lang-pt">Mar 2021 - Fev 2022</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Implementación de prácticas y procesos de ingeniería. Diseño, estructuración e implementación del sistema de liderazgo de la organización bajo el modelo del Pipeline de Liderazgo. Entrenamiento y mentoría de gerentes técnicos, líderes técnicos y arquitectos. Supervisión técnica del portafolio de proyectos. Capacitación y evaluación de personal técnico. Contratación y selección de perfiles técnicos. Dirección y construcción del área de desarrollo de productos. Planeación estratégica y mentoría gerencial.</p>
+                        <p class="lang-en">Engineering practices and processes implementation. Design, structuring, and implementation of the organization's leadership system under the Leadership Pipeline model. Training and mentoring of technical managers, technical leaders, and architects. Technical portfolio oversight. Technical staff training and evaluation. Hiring and selection of technical profiles. Product development area direction and construction. Strategic planning and managerial mentoring.</p>
+                        <p class="lang-pt">Implementação de práticas e processos de engenharia. Design, estruturação e implementação do sistema de liderança da organização sob o modelo do Pipeline de Liderança. Treinamento e mentoria de gerentes técnicos, líderes técnicos e arquitetos. Supervisão técnica do portfólio de projetos. Capacitação e avaliação de pessoal técnico. Contratação e seleção de perfis técnicos. Direção e construção da área de desenvolvimento de produtos. Planejamento estratégico e mentoria gerencial.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Leadership Pipeline</span>
+                        <span class="tag">Government Projects</span>
+                        <span class="tag">Team Development</span>
+                    </div>
+                </div>
+
+                <!-- TOGROOW (2016-2021) -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">CTO & Tech Advisor</div>
+                            <div class="experience-company">TOGROOW</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Feb 2016 - Mar 2021</span>
+                            <span class="lang-en">Feb 2016 - Mar 2021</span>
+                            <span class="lang-pt">Fev 2016 - Mar 2021</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Implementación de prácticas y procesos de ingeniería. Diseño, estructuración e implementación de la solución técnica. Diseño e implementación de la arquitectura de la solución. Soporte de codificación en varios módulos usando PHP/Laravel, Ionic, NodeJS, Angular. Despliegue y mantenimiento de la infraestructura de la solución en Azure. Modelado y participación activa en esquemas de experiencia de usuario (UX) y experiencia de cliente (CX).</p>
+                        <p class="lang-en">Engineering practices and processes implementation. Technical solution design, structuring, and implementation. Solution architecture design and implementation. Coding support in various modules using PHP/Laravel, Ionic, NodeJS, Angular. Solution infrastructure deployment and maintenance on Azure. Modeling and active participation in user experience (UX) and customer experience (CX) schemes.</p>
+                        <p class="lang-pt">Implementação de práticas e processos de engenharia. Design, estruturação e implementação da solução técnica. Design e implementação da arquitetura da solução. Suporte de codificação em vários módulos usando PHP/Laravel, Ionic, NodeJS, Angular. Deploy e manutenção da infraestrutura da solução no Azure. Modelagem e participação ativa em esquemas de experiência do usuário (UX) e experiência do cliente (CX).</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">PHP/Laravel</span>
+                        <span class="tag">NodeJS</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">Azure</span>
+                    </div>
+                </div>
+
+                <!-- Digitalware -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">VP Innovation & Development</div>
+                            <div class="experience-company">Digitalware</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Jul 2015 - Feb 2016</span>
+                            <span class="lang-en">Jul 2015 - Feb 2016</span>
+                            <span class="lang-pt">Jul 2015 - Fev 2016</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Diseño e implementación del modelo de gestión por líneas de productos. Implementación de procesos y prácticas ágiles. Gestión de equipos, coaching y mentoría (250+ personas). Rediseño del modelo de soporte de incidentes y reducción de incidentes en un 83% (6000 → 1000 tickets en 5 meses). Gestión y monitoreo del área de TI.</p>
+                        <p class="lang-en">Product line management model design and implementation. Agile processes and practices implementation. Team management, coaching, and mentoring (250+ people). Incident support model redesign and 83% incident reduction (6000 → 1000 tickets in 5 months). IT area management and monitoring.</p>
+                        <p class="lang-pt">Design e implementação do modelo de gestão por linhas de produtos. Implementação de processos e práticas ágeis. Gestão de equipes, coaching e mentoria (250+ pessoas). Redesign do modelo de suporte de incidentes e redução de 83% (6000 → 1000 tickets em 5 meses). Gestão e monitoramento da área de TI.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">350 People</span>
+                        <span class="tag">-83% Tickets</span>
+                        <span class="tag">5 Months</span>
+                    </div>
+                </div>
+
+                <!-- Globant -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technical Director</div>
+                            <div class="experience-company">Globant</div>
+                        </div>
+                        <div class="experience-period">May 2014 - Jul 2015</div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Dirección técnica de proyectos para clientes de clase mundial: Disney Parks (AngularJS/Java), TripAdvisor - Integración de partners con 700+ proveedores (Java/Spring), RelateIQ (Salesforce) - API multiplataforma (C++), Westcon - E-commerce. Gatekeeper. Trabajo en equipo con equipos de reclutamiento y soporte al jefe de la línea de experiencia del consumidor.</p>
+                        <p class="lang-en">Technical direction of projects for world-class clients: Disney Parks (AngularJS/Java), TripAdvisor - Partner integration with 700+ providers (Java/Spring), RelateIQ (Salesforce) - Multiplatform API (C++), Westcon - E-commerce. Gatekeeper. Teamwork with recruitment teams and consumer experience line head support.</p>
+                        <p class="lang-pt">Direção técnica de projetos para clientes de classe mundial: Disney Parks (AngularJS/Java), TripAdvisor - Integração de parceiros com 700+ fornecedores (Java/Spring), RelateIQ (Salesforce) - API multiplataforma (C++), Westcon - E-commerce. Gatekeeper. Trabalho em equipe com equipes de recrutamento e suporte ao chefe da linha de experiência do consumidor.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Disney</span>
+                        <span class="tag">TripAdvisor</span>
+                        <span class="tag">Salesforce</span>
+                        <span class="tag">Java/Spring</span>
+                    </div>
+                </div>
+
+                <!-- ETASK Technologies -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">CTO - Co-Founder</div>
+                            <div class="experience-company">ETASK Technologies (Hydra Management)</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Jun 2009 - Dic 2013</span>
+                            <span class="lang-en">Jun 2009 - Dec 2013</span>
+                            <span class="lang-pt">Jun 2009 - Dez 2013</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Cofundador de la empresa. Ideación de productos y diseño de productos. Colaboración con el CEO en la definición del modelo de negocio y visión de la empresa. Definición y diseño de la arquitectura de la solución. Desarrollo de prototipos para validación de usabilidad y aceptación. Implementación exitosa de prácticas ágiles. Diseño del modelo de automatización de proyectos core de la solución.</p>
+                        <p class="lang-en">Company co-founder. Product ideation and product design. CEO collaboration in business model definition and company vision. Solution architecture definition and design. Prototype development for usability validation and acceptance. Successful agile practices implementation. Core project automation model design for the solution.</p>
+                        <p class="lang-pt">Cofundador da empresa. Ideação de produtos e design de produtos. Colaboração com o CEO na definição do modelo de negócio e visão da empresa. Definição e design da arquitetura da solução. Desenvolvimento de protótipos para validação de usabilidade e aceitação. Implementação bem-sucedida de práticas ágeis. Design do modelo de automação de projetos core da solução.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Startup Co-Founder</span>
+                        <span class="tag">Product Design</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                </div>
+
+                <!-- Heinsohn - Project Manager -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Project Manager</div>
+                            <div class="experience-company">Heinsohn Business Technology</div>
+                        </div>
+                        <div class="experience-period">Oct 2007 - May 2009</div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Dirección de proyectos para CODENSA (3 proyectos), FEDEPALMA, ETASK. Arquitectura empresarial HBT.</p>
+                        <p class="lang-en">Project direction for CODENSA (3 projects), FEDEPALMA, ETASK. HBT enterprise architecture.</p>
+                        <p class="lang-pt">Direção de projetos para CODENSA (3 projetos), FEDEPALMA, ETASK. Arquitetura empresarial HBT.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Enterprise Architecture</span>
+                        <span class="tag">Multi-Project</span>
+                    </div>
+                </div>
+
+                <!-- Heinsohn - Technical Presales Director -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Technical Presales Director</div>
+                            <div class="experience-company">Heinsohn Business Technology</div>
+                        </div>
+                        <div class="experience-period">Oct 2005 - Sep 2007</div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Formulación de modelos de construcción de software repetibles respaldados en MDA. Formulación de modelo de procesos para certificación CMMi 5 utilizando UMA (Arquitectura de Método Unificado por OMG). Ventas técnicas > $25MM COP. Implementación y montaje de equipo de preventa técnica. Negociación con terceros, modelo de consultoría arquitectura empresarial.</p>
+                        <p class="lang-en">Formulation of repeatable software construction models backed by MDA. Process model formulation for CMMi 5 certification using UMA (Unified Method Architecture by OMG). Technical sales > $25MM COP. Technical presales team implementation and setup. Third-party negotiation, enterprise architecture consulting model.</p>
+                        <p class="lang-pt">Formulação de modelos de construção de software repetíveis apoiados em MDA. Formulação de modelo de processos para certificação CMMi 5 utilizando UMA (Arquitetura de Método Unificado por OMG). Vendas técnicas > $25MM COP. Implementação e montagem de equipe de pré-vendas técnicas. Negociação com terceiros, modelo de consultoria arquitetura empresarial.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">CMMi 5</span>
+                        <span class="tag">MDA</span>
+                        <span class="tag">Sales >$25MM</span>
+                    </div>
+                </div>
+
+                <!-- Heinsohn - SW Factory Director -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">SW Factory Director</div>
+                            <div class="experience-company">Heinsohn Business Technology</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Mar 2002 - Ene 2007</span>
+                            <span class="lang-en">Mar 2002 - Jan 2007</span>
+                            <span class="lang-pt">Mar 2002 - Jan 2007</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Inicio, diseño y montaje de la unidad de negocio de fábrica de software. Diseño de modelo de trabajo con equipos remotos. Arquitectura y gestión de proyectos críticos. Construcción y crecimiento de la unidad de negocio de 5 personas a 250+ en 2 años. Gestión técnica y liderazgo de más de 40+ proyectos para diversos clientes. Soporte de ventas en la venta técnica.</p>
+                        <p class="lang-en">Software factory business unit startup, design, and setup. Remote team work model design. Architecture and critical project management. Business unit construction and growth from 5 to 250+ people in 2 years. Technical management and leadership of 40+ projects for various clients. Sales support in technical sales.</p>
+                        <p class="lang-pt">Início, design e montagem da unidade de negócio de fábrica de software. Design de modelo de trabalho com equipes remotas. Arquitetura e gestão de projetos críticos. Construção e crescimento da unidade de negócio de 5 para 250+ pessoas em 2 anos. Gestão técnica e liderança de 40+ projetos para diversos clientes. Suporte de vendas na venda técnica.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">5→250+ People</span>
+                        <span class="tag">40+ Projects</span>
+                        <span class="tag">Business Unit Creation</span>
+                    </div>
+                </div>
+
+                <!-- Unisys Colombia -->
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <div>
+                            <div class="experience-title">Lead Architect & Consultant</div>
+                            <div class="experience-company">Unisys Colombia</div>
+                        </div>
+                        <div class="experience-period">
+                            <span class="lang-es">Mar 1998 - Oct 2005</span>
+                            <span class="lang-en">Mar 1998 - Oct 2005</span>
+                            <span class="lang-pt">Mar 1998 - Out 2005</span>
+                        </div>
+                    </div>
+                    <div class="experience-description">
+                        <p class="lang-es">Implementación de la plataforma central bancaria para Banco Santander Latinoamérica. Capacitación de ingenieros implementadores de soluciones bancarias en toda América Latina. Diseño y extensión de módulos centrales (C++) y drivers solución integral de oficinas. Liderazgo de equipos de desarrollo. Diseño de arquitecturas y esquemas de integración. Consolidación de data financiera para balance general de la nación en modelo de agregación distribuido. Diseño y desarrollo de controladores para gestión de dispositivos bancarios. Diseño e implementación de componentes de integración a través de MQ-Series con canales de Redeban, Servibanca.</p>
+                        <p class="lang-en">Core banking platform implementation for Banco Santander Latin America. Training of banking solution implementation engineers across Latin America. Design and extension of core modules (C++) and comprehensive office solution drivers. Development team leadership. Architecture design and integration schemes. Financial data consolidation for national balance sheet in distributed aggregation model. Banking device management driver design and development. Integration component design and implementation through MQ-Series with Redeban, Servibanca channels.</p>
+                        <p class="lang-pt">Implementação da plataforma central bancária para Banco Santander América Latina. Capacitação de engenheiros implementadores de soluções bancárias em toda América Latina. Design e extensão de módulos centrais (C++) e drivers de solução integral de escritórios. Liderança de equipes de desenvolvimento. Design de arquiteturas e esquemas de integração. Consolidação de dados financeiros para balanço geral da nação em modelo de agregação distribuído. Design e desenvolvimento de controladores para gestão de dispositivos bancários. Design e implementação de componentes de integração através de MQ-Series com canais Redeban, Servibanca.</p>
+                    </div>
+                    <div class="experience-tags">
+                        <span class="tag">Banco Santander LATAM</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">MQ-Series</span>
+                        <span class="tag">Core Banking</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation & AI -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-es">Innovación e IA</span>
+                <span class="lang-en">Innovation & AI</span>
+                <span class="lang-pt">Inovação e IA</span>
+            </h2>
+
+            <div class="innovation-box">
+                <h3>S.P.I.R.A.L. Methodology</h3>
+                <p class="lang-es">
+                    He desarrollado y aplicado <strong>SPIRAL</strong>, una metodología propia para construcción de productos con IA. Este framework introduce un enfoque <strong>sistémico, jerárquico y orientado a dominio</strong> que acelera la ideación, diseño, validación y evolución de MVPs con IA aplicada.
+                </p>
+                <p class="lang-en">
+                    I have developed and applied <strong>SPIRAL</strong>, a proprietary methodology for building AI products. This framework introduces a <strong>systemic, hierarchical, and domain-oriented</strong> approach that accelerates ideation, design, validation, and evolution of MVPs with applied AI.
+                </p>
+                <p class="lang-pt">
+                    Desenvolvi e apliquei <strong>SPIRAL</strong>, uma metodologia própria para construção de produtos com IA. Este framework introduz uma abordagem <strong>sistêmica, hierárquica e orientada a domínio</strong> que acelera a ideação, design, validação e evolução de MVPs com IA aplicada.
+                </p>
+
+                <ul>
+                    <li class="lang-es">Diseño iterativo guiado por IA en workshops y MVPs reales</li>
+                    <li class="lang-en">AI-guided iterative design in workshops and real MVPs</li>
+                    <li class="lang-pt">Design iterativo guiado por IA em workshops e MVPs reais</li>
+
+                    <li class="lang-es">Automatización inteligente de procesos de desarrollo</li>
+                    <li class="lang-en">Intelligent automation of development processes</li>
+                    <li class="lang-pt">Automação inteligente de processos de desenvolvimento</li>
+
+                    <li class="lang-es">Uso responsable y gobernado de IA aplicada a productos</li>
+                    <li class="lang-en">Responsible and governed use of AI applied to products</li>
+                    <li class="lang-pt">Uso responsável e governado de IA aplicada a produtos</li>
+                </ul>
+
+                <a href="https://chatgpt.com/g/g-681a2875f7e08191addacb18f1ec3627-mvp-builder-con-s-p-i-r-a-l" target="_blank" class="innovation-link">
+                    <span class="lang-es">Probar SPIRAL GPT →</span>
+                    <span class="lang-en">Try SPIRAL GPT →</span>
+                    <span class="lang-pt">Testar SPIRAL GPT →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-es">Habilidades Técnicas</span>
+                <span class="lang-en">Technical Skills</span>
+                <span class="lang-pt">Habilidades Técnicas</span>
+            </h2>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">NodeJS</span>
+                        <span class="skill-tag">NestJS</span>
+                        <span class="skill-tag">Express</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">Svelte</span>
+                        <span class="skill-tag">NextJS</span>
+                        <span class="skill-tag">NuxtJS</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">AngularJS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">RDS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <span class="lang-es">Arquitectura</span>
+                        <span class="lang-en">Architecture</span>
+                        <span class="lang-pt">Arquitetura</span>
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Microservices</span>
+                        <span class="skill-tag">DDD</span>
+                        <span class="skill-tag">Event-Driven</span>
+                        <span class="skill-tag">Event Sourcing</span>
+                        <span class="skill-tag">Hexagonal</span>
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">CQRS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">MS SQL Server</span>
+                        <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>
+                        <span class="lang-es">Otras</span>
+                        <span class="lang-en">Others</span>
+                        <span class="lang-pt">Outras</span>
+                    </h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">MQ-Series</span>
+                        <span class="skill-tag">SocketIO</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">GraphQL</span>
+                        <span class="skill-tag">Ionic</span>
+                        <span class="skill-tag">Power Builder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-es">Formación Académica y Certificaciones</span>
+                <span class="lang-en">Education & Certifications</span>
+                <span class="lang-pt">Formação Acadêmica e Certificações</span>
+            </h2>
+
+            <div class="education-grid">
+                <div class="education-item">
+                    <div class="education-year">2008</div>
+                    <div class="education-title">
+                        <span class="lang-es">Especialista en Arquitectura Empresarial de Software</span>
+                        <span class="lang-en">Specialist in Enterprise Software Architecture</span>
+                        <span class="lang-pt">Especialista em Arquitetura Empresarial de Software</span>
+                    </div>
+                    <div class="education-institution">Pontificia Universidad Javeriana</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">2007</div>
+                    <div class="education-title">
+                        <span class="lang-es">Diplomado en Negociación Profesional</span>
+                        <span class="lang-en">Professional Negotiation Diploma</span>
+                        <span class="lang-pt">Diplomado em Negociação Profissional</span>
+                    </div>
+                    <div class="education-institution">Colegio de Estudios Superiores CESA</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">1998</div>
+                    <div class="education-title">
+                        <span class="lang-es">Ingeniería de Sistemas</span>
+                        <span class="lang-en">Systems Engineering</span>
+                        <span class="lang-pt">Engenharia de Sistemas</span>
+                    </div>
+                    <div class="education-institution">Universidad Nacional de Colombia</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">2017</div>
+                    <div class="education-title">
+                        <span class="lang-es">Coach, Facilitador y Mentor en Ingeniería Humana</span>
+                        <span class="lang-en">Coach, Facilitator and Mentor in Human Engineering</span>
+                        <span class="lang-pt">Coach, Facilitador e Mentor em Engenharia Humana</span>
+                    </div>
+                    <div class="education-institution">Altamente</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">2013</div>
+                    <div class="education-title">Certified Scrum Master</div>
+                    <div class="education-institution">Scrum Alliance</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">2013</div>
+                    <div class="education-title">Certified Scrum Product Owner</div>
+                    <div class="education-institution">Scrum Alliance</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">2003</div>
+                    <div class="education-title">Sun Certified Java Programmer</div>
+                    <div class="education-institution">Sun Microsystems</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="lang-es">Idiomas</span>
+                <span class="lang-en">Languages</span>
+                <span class="lang-pt">Idiomas</span>
+            </h2>
+
+            <div class="languages-list">
+                <div class="language-item">
+                    <h3>
+                        <span class="lang-es">Español</span>
+                        <span class="lang-en">Spanish</span>
+                        <span class="lang-pt">Espanhol</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Nativo</span>
+                        <span class="lang-en">Native</span>
+                        <span class="lang-pt">Nativo</span>
+                    </p>
+                </div>
+
+                <div class="language-item">
+                    <h3>
+                        <span class="lang-es">Inglés</span>
+                        <span class="lang-en">English</span>
+                        <span class="lang-pt">Inglês</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Conversacional - C1</span>
+                        <span class="lang-en">Conversational - C1</span>
+                        <span class="lang-pt">Conversacional - C1</span>
+                    </p>
+                </div>
+
+                <div class="language-item">
+                    <h3>
+                        <span class="lang-es">Portugués</span>
+                        <span class="lang-en">Portuguese</span>
+                        <span class="lang-pt">Português</span>
+                    </h3>
+                    <p>
+                        <span class="lang-es">Conversacional</span>
+                        <span class="lang-en">Conversational</span>
+                        <span class="lang-pt">Conversacional</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Rafael Ernesto Pino.
+                <span class="lang-es">Todos los derechos reservados.</span>
+                <span class="lang-en">All rights reserved.</span>
+                <span class="lang-pt">Todos os direitos reservados.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle
+        const langBtns = document.querySelectorAll('.lang-btn');
+        const html = document.documentElement;
+
+        langBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.dataset.lang;
+                langBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                html.setAttribute('data-lang', lang);
+                html.setAttribute('lang', lang);
+            });
+        });
+
+        // Timeline Toggle
+        function toggleTimeline() {
+            const timeline = document.getElementById('timeline');
+            const expandTexts = document.querySelectorAll('.toggle-text-expand');
+            const collapseTexts = document.querySelectorAll('.toggle-text-collapse');
+
+            if (timeline.classList.contains('collapsed')) {
+                timeline.classList.remove('collapsed');
+                expandTexts.forEach(el => el.style.display = 'none');
+                collapseTexts.forEach(el => el.style.display = '');
+            } else {
+                timeline.classList.add('collapsed');
+                expandTexts.forEach(el => el.style.display = '');
+                collapseTexts.forEach(el => el.style.display = 'none');
+            }
+        }
+    </script>
+</body>
+</html>
