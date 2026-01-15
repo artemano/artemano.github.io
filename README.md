@@ -25,33 +25,6 @@ cv-rafael-pino/
 └── README.md       # Este archivo
 ```
 
-### 🚀 Despliegue en GitHub Pages
-
-#### Opción 1: Despliegue Rápido
-
-1. Crea un nuevo repositorio en GitHub llamado `tuusuario.github.io` (reemplaza `tuusuario` con tu username)
-2. Sube los archivos a este repositorio
-3. Ve a **Settings > Pages**
-4. En "Source" selecciona **Deploy from a branch**
-5. Selecciona la rama `main` y carpeta `/ (root)`
-6. Guarda y espera unos minutos
-7. Tu sitio estará disponible en `https://tuusuario.github.io`
-
-#### Opción 2: Como Repositorio Separado
-
-1. Crea un repositorio con cualquier nombre (ej: `cv`, `portfolio`)
-2. Sube los archivos
-3. Ve a **Settings > Pages**
-4. Configura la fuente como arriba
-5. Tu sitio estará en `https://tuusuario.github.io/nombre-repo`
-
-### 📷 Agregar Foto de Perfil
-
-1. Guarda tu foto como `profile.jpg` en la raíz del proyecto
-2. Tamaño recomendado: 400x400 píxeles mínimo
-3. Formato: JPG o PNG
-4. Si no hay foto, se mostrará un placeholder automático
-
 ### ✏️ Personalización
 
 #### Cambiar Colores
@@ -97,5 +70,3 @@ Este proyecto es de uso personal para Rafael Ernesto Pino.
 - **Ubicación**: Bogotá, Colombia
 
 ---
-
-Creado con 💻 y ☕ | 2025
