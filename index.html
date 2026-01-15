@@ -34,6 +34,18 @@
             --bg-white: #ffffff;
         }
 
+        /* Dark Theme */
+        [data-theme="dark"] {
+            --primary-color: #58a6ff;
+            --secondary-color: #3fb950;
+            --text-dark: #e6edf3;
+            --text-medium: #8b949e;
+            --text-light: #6e7681;
+            --border-color: #30363d;
+            --bg-light: #161b22;
+            --bg-white: #0d1117;
+        }
+
         html {
             scroll-behavior: smooth;
         }
@@ -43,6 +55,7 @@
             color: var(--text-dark);
             line-height: 1.6;
             background: var(--bg-white);
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .container {
@@ -103,6 +116,68 @@
             background: var(--primary-color);
             color: white;
             border-color: var(--primary-color);
+        }
+
+        /* Theme Toggle */
+        .theme-toggle {
+            position: relative;
+            width: 60px;
+            height: 28px;
+            background: var(--border-color);
+            border-radius: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .theme-toggle::before {
+            content: '☀️';
+            position: absolute;
+            top: 50%;
+            left: 4px;
+            transform: translateY(-50%);
+            font-size: 16px;
+            transition: opacity 0.3s ease;
+        }
+
+        .theme-toggle::after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 24px;
+            height: 24px;
+            background: var(--bg-white);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        [data-theme="dark"] .theme-toggle {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .theme-toggle::before {
+            content: '🌙';
+            left: auto;
+            right: 4px;
+        }
+
+        [data-theme="dark"] .theme-toggle::after {
+            transform: translateX(32px);
+        }
+
+        .header-controls {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        /* Smooth transitions for theme changes */
+        * {
+            transition: background-color 0.3s ease,
+                        color 0.3s ease,
+                        border-color 0.3s ease,
+                        box-shadow 0.3s ease;
         }
 
         /* Profile Section */
@@ -502,10 +577,13 @@
         <div class="container">
             <div class="header-content">
                 <div class="header-title">Rafael Ernesto Pino | CTO</div>
-                <div class="lang-selector">
-                    <button class="lang-btn active" data-lang="es">ES</button>
-                    <button class="lang-btn" data-lang="en">EN</button>
-                    <button class="lang-btn" data-lang="pt">PT</button>
+                <div class="header-controls">
+                    <div class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"></div>
+                    <div class="lang-selector">
+                        <button class="lang-btn active" data-lang="es">ES</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                        <button class="lang-btn" data-lang="pt">PT</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1294,9 +1372,22 @@
     </footer>
 
     <script>
+        // Theme Toggle
+        const html = document.documentElement;
+
+        // Load saved theme or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        function toggleTheme() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        }
+
         // Language Toggle
         const langBtns = document.querySelectorAll('.lang-btn');
-        const html = document.documentElement;
 
         langBtns.forEach(btn => {
             btn.addEventListener('click', () => {
