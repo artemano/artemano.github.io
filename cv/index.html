@@ -1,0 +1,2254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CV de Rafael Ernesto Pino</title>
+  <link id="cv-fonts" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400..800&amp;family=Newsreader:opsz,wght@6..72,200..700&amp;family=Roboto:wght@100..700&amp;display=swap">
+  <style id="cv-css">
+    *, *::before, *::after { box-sizing: border-box; }
+    .document {
+      --accent: #b8632f;
+      --rule: #d4a574;
+      --ink: #1a1a1a;
+      --accent-ink: #fff;
+      --accent-pale: #ffdfcc;
+      --accent-dark: #7c370d;
+      --title-font: "Newsreader", Georgia, serif;
+      --body-font: "Roboto", Arial, sans-serif;
+      --detail-font: "DM Sans", Arial, sans-serif;
+      --border: #e5e5e5;
+      --muted: #555;
+      --card-fill: #fafafa;
+      --card-radius: 6px;
+      --tag-radius: 10px;
+      --section-tracking: 2.6px;
+      --section-gap: 17px;
+      width: 816px;
+      margin: 0 auto;
+      color: var(--ink);
+      font: 10.5px/1.45 var(--body-font);
+      overflow-wrap: break-word;
+    }
+    .document[data-style="classic"] {
+      --card-fill: #fff;
+      --card-radius: 0;
+      --tag-radius: 0;
+      --section-tracking: 1.7px;
+    }
+    .document[data-style="minimal"] {
+      --card-fill: transparent;
+      --card-radius: 0;
+      --tag-radius: 3px;
+      --section-tracking: 1px;
+    }
+    .sheet {
+      display: flex;
+      flex-direction: column;
+      width: 816px;
+      min-height: 1056px;
+      padding: 42px 44px 28px;
+      background: #fff;
+      text-align: left;
+    }
+    .sheet + .sheet { margin-top: 26px; }
+    .sheet.advisory { --section-gap: 13px; padding: 36px 36px 28px; }
+    .sheet h1, .sheet h2, .sheet h3, .sheet p, .sheet ul { margin: 0; }
+    .sheet a { color: inherit; text-decoration: none; }
+    .sheet a:hover { text-decoration: underline; }
+    .cv-header {
+      display: grid;
+      grid-template-columns: 1fr max-content;
+      align-items: start;
+      gap: 14px 18px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .identity h1 {
+      font: 500 49px/.98 var(--title-font);
+      letter-spacing: -.045em;
+    }
+    .identity .headline {
+      color: var(--accent-dark);
+      margin-top: 10px;
+      font: 800 9.5px/1.45 var(--detail-font);
+      letter-spacing: .085em;
+    }
+    .contacts {
+      display: grid;
+      justify-items: end;
+      font: 500 10px/1.48 var(--detail-font);
+      color: var(--muted);
+    }
+    .cv-header.centered {
+      display: block;
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      box-shadow: 0 1px var(--rule);
+    }
+    .cv-header.centered .identity h1 { font-size: 51px; }
+    .cv-header.centered .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 17px;
+      margin-top: 12px;
+    }
+    .cv-header.centered .contacts > * + *::before {
+      content: "·";
+      display: inline-block;
+      margin-right: 15px;
+      color: var(--accent);
+    }
+    .sheet .summary { margin-top: 12px; }
+    .advisory .summary {
+      max-width: 610px;
+      margin-inline: auto;
+      text-align: center;
+    }
+    .metrics {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(0, 1fr);
+      align-items: stretch;
+      padding: 11px 0 8px;
+      margin-top: 15px;
+      background: var(--card-fill);
+      border-block: 1px solid var(--border);
+      text-align: center;
+    }
+    .metric { padding: 2px 4px; }
+    .metric + .metric { border-left: 1px solid var(--border); }
+    .metric strong {
+      display: block;
+      color: var(--accent);
+      font: 500 36px/36px var(--title-font);
+      letter-spacing: -.035em;
+      overflow-wrap: normal;
+      white-space: nowrap;
+    }
+    .metric[data-metric="enterprise_deals"] strong { font-size: calc(36px - 1pt); }
+    .metric span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font: 500 8.5px/1.3 var(--body-font);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    .advisory .metrics { margin-top: 12px; padding-block: 8px; }
+    .cv-section { margin-top: var(--section-gap); }
+    .sheet > .cv-section:first-child { margin-top: 0; }
+    .cv-section > h2 {
+      padding-bottom: 6px;
+      margin-bottom: 9px;
+      border-bottom: 2px solid var(--accent);
+      box-shadow: 0 1px var(--rule);
+      font: 700 13.5px/1.15 var(--body-font);
+      letter-spacing: var(--section-tracking);
+      text-transform: uppercase;
+    }
+    .document[data-style="classic"] .cv-section > h2,
+    .document[data-style="minimal"] .cv-section > h2 {
+      border-bottom-width: 1px;
+      box-shadow: none;
+    }
+    .document[data-style="classic"] .cv-section > h2 { font-family: var(--title-font); }
+    .document[data-style="minimal"] .cv-section > h2 { border-bottom-color: var(--border); }
+    .roles { display: grid; gap: 9px; }
+    .role + .role { border-top: 1px solid var(--border); padding-top: 8px; }
+    .role-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2px 10px;
+      margin-bottom: 3px;
+    }
+    .role-head h3 { font: 800 12.5px/1.24 var(--detail-font); }
+    .company { font-weight: 650; color: var(--accent-dark); }
+    .period { color: var(--muted); font: 500 9.5px/1.35 var(--detail-font); }
+    .sheet .role-description { margin-bottom: 4px; color: var(--muted); }
+    .sheet ul { list-style: none; padding: 0; }
+    .bullets { display: grid; row-gap: 2px; }
+    .bullets.columns {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 16px;
+    }
+    .bullets li { position: relative; padding-left: 11px; }
+    .bullets li::before {
+      content: "◆";
+      position: absolute;
+      inset: .44em auto auto 0;
+      color: var(--accent);
+      font-size: 6px;
+    }
+    .continued .roles { gap: 7px; }
+    .continued .role + .role { padding-top: 7px; }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+      gap: 9px;
+    }
+    .card {
+      border: 1px solid var(--border);
+      border-radius: var(--card-radius);
+      background: var(--card-fill);
+      padding: 9px 11px;
+    }
+    .document[data-style="minimal"] .card {
+      border-width: 1px 0 0;
+      padding-inline: 0;
+    }
+    .card > svg {
+      display: block;
+      color: var(--accent);
+      width: 28px;
+      height: 28px;
+      margin-bottom: 6px;
+    }
+    .card h3, .skills h3, .credentials h3 {
+      font: 800 11.5px/1.28 var(--detail-font);
+      margin-bottom: 3px;
+    }
+    .card p { font-size: 10.5px; }
+    .card .period { margin-bottom: 4px; }
+    .service-grid .card { padding-block: 9px; }
+    .service-grid .bullets { font-size: 10.5px; }
+    .track-grid .card { background: #fff; }
+    .tags { display: flex; flex-wrap: wrap; gap: 3px 4px; }
+    .tag {
+      display: inline-block;
+      border: 1px solid transparent;
+      border-radius: var(--tag-radius);
+      padding: 2px 7px;
+      color: var(--accent-ink);
+      background: var(--accent);
+      font: 600 9px/1.26 var(--detail-font);
+      letter-spacing: .02em;
+    }
+    .tag.secondary { color: var(--accent-dark); background: var(--accent-pale); }
+    .document[data-style="minimal"] .tag {
+      color: var(--ink);
+      background: transparent;
+      border-color: var(--border);
+    }
+    .skills.rows { display: grid; gap: 5px; }
+    .skills.rows > div {
+      display: grid;
+      grid-template-columns: 127px 1fr;
+      align-items: baseline;
+      column-gap: 8px;
+    }
+    .skills.rows h3 { margin-bottom: 0; }
+    .skills.columns, .credentials {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 12px;
+    }
+    .skills.columns > div + div, .credentials > div + div {
+      padding-left: 12px;
+      border-left: 1px solid var(--border);
+    }
+    .credentials li { font-size: 10px; line-height: 1.35; }
+    .credentials li + li { margin-top: 4px; }
+    .credentials small { display: block; font: inherit; color: var(--muted); }
+    .advisory .card { padding-block: 9px; }
+    .document:is(:lang(es), :lang(pt)) .sheet.advisory { --section-gap: 11px; }
+    .document:is(:lang(es), :lang(pt)) :is(.advisory, .service-grid) .card { padding-block: 8px; }
+    .advisory .credentials li { font-size: 10.5px; }
+    .sheet footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: auto;
+      padding-top: 17px;
+      color: var(--muted);
+      font: 650 8.5px/1.4 var(--detail-font);
+      letter-spacing: .12em;
+    }
+    .sheet footer span {
+      width: 100%;
+      border-top: 1px solid var(--rule);
+      padding-top: 8px;
+      text-align: right;
+    }
+    .advisory footer span { text-align: center; }
+    @page { size: Letter portrait; margin: 0; }
+    @media print {
+      html, body { width: 8.5in; margin: 0 !important; background: #fff !important; }
+      .document {
+        zoom: 1 !important;
+        margin: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+      .sheet {
+        height: 11in;
+        min-height: 0;
+        width: 8.5in;
+        margin: 0 !important;
+        box-shadow: none !important;
+        break-after: page;
+      }
+      .sheet:last-child { break-after: auto; }
+      .card, .role, .cv-header, .metrics { break-inside: avoid; }
+      .cv-section > h2 { break-after: avoid; }
+    }
+  </style>
+  <style>
+    :root {
+      color-scheme: light;
+      --ui-ink: #292623;
+      --ui-muted: #625d56;
+      --ui-accent: #94491f;
+      --ui-border: #e6e0d8;
+      font: 14px/1.5 "DM Sans", system-ui, sans-serif;
+      color: var(--ui-ink);
+      background: #edeae5;
+    }
+    body { margin: 0; }
+    button, select, input { font: inherit; }
+    button { cursor: pointer; }
+    :focus-visible { outline: 2px solid var(--ui-accent); outline-offset: 3px; }
+    .topbar {
+      position: sticky;
+      z-index: 2;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 13px 26px;
+      min-height: 68px;
+      border-bottom: 1px solid var(--ui-border);
+      background: #fffcf8;
+    }
+    .brand, .top-actions, .action { display: flex; align-items: center; }
+    .brand { gap: 10px; font-size: 16px; font-weight: 800; letter-spacing: -.025em; }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      flex: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      color: var(--ui-accent);
+      background: #f5e7dc;
+    }
+    .brand-mark svg, .action svg { width: 17px; height: 17px; }
+    .top-actions { gap: 8px; }
+    .action {
+      justify-content: center;
+      gap: 8px;
+      min-height: 38px;
+      border: 1px solid #dcd4cb;
+      border-radius: 7px;
+      padding: 7px 12px;
+      background: transparent;
+      color: var(--ui-ink);
+      font-weight: 750;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .action:hover { background: #f1ebe3; }
+    .action.primary { border-color: #302b26; color: #fff; background: #302b26; }
+    .action.primary:hover { background: #4b4036; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr); align-items: start; }
+    .layout.generator { grid-template-columns: 294px minmax(0, 1fr); }
+    .settings[hidden], .variants[hidden] { display: none; }
+    .settings {
+      position: sticky;
+      top: 68px;
+      min-height: calc(100dvh - 68px);
+      max-height: calc(100dvh - 68px);
+      overflow: auto;
+      background: #fffcf8;
+      border-right: 1px solid var(--ui-border);
+    }
+    .settings summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 23px 20px 12px;
+      cursor: pointer;
+      list-style: none;
+    }
+    .settings summary::-webkit-details-marker { display: none; }
+    .settings summary svg { width: 16px; height: 16px; color: var(--ui-muted); }
+    .settings[open] summary svg { transform: rotate(180deg); }
+    .settings-heading { font-size: 17px; font-weight: 800; letter-spacing: -.025em; }
+    .settings-content { padding: 0 20px 22px; }
+    .setting-group {
+      margin: 0 0 16px;
+      padding: 13px 0 0;
+      border-top: 1px solid var(--ui-border);
+    }
+    .setting-group h2 {
+      margin: 0 0 10px;
+      color: var(--ui-ink);
+      font-size: 12px;
+      font-weight: 800;
+    }
+    .palette-options {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 5px;
+      margin-bottom: 10px;
+    }
+    .palette {
+      display: grid;
+      justify-items: center;
+      gap: 5px;
+      padding: 5px 1px 4px;
+      border: 1px solid transparent;
+      border-radius: 7px;
+      background: transparent;
+      color: var(--ui-muted);
+      font-size: 9px;
+      font-weight: 750;
+    }
+    .palette:hover, .palette[aria-pressed="true"] { background: #f4ebe3; }
+    .palette[aria-pressed="true"] { border-color: #d2b49e; color: var(--ui-accent); }
+    .swatch {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border: 1px solid #302b2618;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--swatch-a) 55%, var(--swatch-b) 55%);
+    }
+    .setting-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 32px;
+      gap: 8px;
+      color: var(--ui-muted);
+      font-size: 11.5px;
+    }
+    .color-value { display: flex; align-items: center; gap: 8px; }
+    .color-value output { min-width: 49px; font: 10px ui-monospace, monospace; }
+    input[type="color"] {
+      width: 27px;
+      height: 23px;
+      padding: 2px;
+      border: 1px solid #dcd4cb;
+      border-radius: 5px;
+      background: #fff;
+      cursor: pointer;
+    }
+    .font-rows { display: grid; gap: 5px; }
+    .setting-row select {
+      width: 123px;
+      min-height: 29px;
+      padding: 3px 6px;
+      border: 1px solid #dcd4cb;
+      border-radius: 5px;
+      color: var(--ui-ink);
+      background: #fff;
+      font-size: 11.5px;
+    }
+    .style-options, .variants { display: flex; align-items: stretch; gap: 3px; }
+    .style-options {
+      padding: 3px;
+      border: 1px solid var(--ui-border);
+      border-radius: 7px;
+      background: #f3efe9;
+    }
+    .style-options button, .variant {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background: transparent;
+      color: var(--ui-muted);
+      font-weight: 750;
+      white-space: nowrap;
+    }
+    .style-options button { flex: 1; padding: 4px 2px; font-size: 10.5px; }
+    .style-options button:hover, .variant:hover { color: var(--ui-ink); }
+    .style-options button[aria-pressed="true"] {
+      border-color: #ded4c8;
+      background: #fff;
+      color: var(--ui-ink);
+      box-shadow: 0 1px 2px #352d2210;
+    }
+    .reset {
+      padding: 3px 0;
+      border: 0;
+      background: none;
+      color: var(--ui-accent);
+      font-size: 11.5px;
+      font-weight: 750;
+    }
+    .reset:hover { text-decoration: underline; }
+    .preview { min-width: 0; padding: 24px 26px 44px; }
+    .preview-bar, .preview-frame { max-width: 816px; margin-inline: auto; }
+    .preview-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 9px 14px;
+      margin-bottom: 16px;
+    }
+    .variants {
+      padding: 4px;
+      border: 1px solid #ded7cc;
+      border-radius: 8px;
+      background: #e5e0d8;
+    }
+    .variant { padding: 6px 12px; font-size: 12px; }
+    .variant[aria-pressed="true"] {
+      border-color: #e0d9cf;
+      color: #392c22;
+      background: #fffcf8;
+      box-shadow: 0 1px 2px #352d2214;
+    }
+    .preview-tools, .language-control {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+    }
+    .language-control {
+      gap: 6px;
+      color: var(--ui-muted);
+      font-size: 11.5px;
+      font-weight: 650;
+    }
+    .language-control select {
+      min-height: 32px;
+      padding: 3px 5px;
+      border: 1px solid #ded7cc;
+      border-radius: 5px;
+      color: var(--ui-ink);
+      background: #fffcf8;
+    }
+    .page-info {
+      color: var(--ui-muted);
+      font-size: 11.5px;
+      font-weight: 650;
+      white-space: nowrap;
+    }
+    .preview-frame > .document { zoom: var(--preview-scale, 1); }
+    .preview-frame .sheet { box-shadow: 0 1px 2px #32291d20, 0 8px 28px #32291d18; }
+    @media (max-width: 850px) {
+      .layout { display: block; }
+      .settings { position: static; min-height: 0; max-height: none; border: 0; border-bottom: 1px solid var(--ui-border); }
+      .settings summary { padding-block: 12px; }
+      .settings-content { max-width: 430px; padding-bottom: 14px; }
+      .preview { padding: 15px 16px 30px; }
+    }
+    @media (max-width: 520px) {
+      .topbar { padding: 10px 12px; min-height: 56px; }
+      .brand { font-size: 13px; gap: 6px; }
+      .brand-mark { width: 28px; height: 28px; }
+      .top-actions { gap: 5px; }
+      .action { gap: 4px; padding: 5px 7px; min-height: 34px; }
+      .action svg { width: 14px; height: 14px; }
+      .action .long-label { display: none; }
+      .settings summary { padding-inline: 14px; }
+      .settings-heading { font-size: 14px; }
+      .preview { padding-inline: 12px; }
+      .variant { padding: 5px 8px; font-size: 11px; }
+      .page-info { font-size: 10px; }
+    }
+    @media print {
+      .topbar, .settings, .preview-bar { display: none !important; }
+      .layout, .preview, .preview-frame { display: block; padding: 0; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h8l4 4v14H6zM14 3v5h4M9 12h6M9 16h6"/></svg></span>
+      <span>CV de Rafael Pino</span>
+    </div>
+    <div class="top-actions">
+      <button id="download" type="button" class="action" aria-label="Descargar HTML">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
+        <span><span class="long-label">Descargar </span>HTML</span>
+      </button>
+      <button id="print" type="button" class="action primary" aria-label="Imprimir o guardar PDF">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8V3h12v5M6 17H3V8h18v9h-3M6 14h12v7H6zM17 11h1"/></svg>
+        <span><span class="long-label">Imprimir / </span>PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <details class="settings" open hidden>
+      <summary>
+        <span class="settings-heading">Personalizar</span>
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+      </summary>
+      <div class="settings-content">
+        <section class="setting-group" aria-labelledby="palette-label">
+          <h2 id="palette-label">Paleta</h2>
+          <div class="palette-options" id="palettes" role="group" aria-labelledby="palette-label"></div>
+          <label class="setting-row" for="accent">Principal
+            <span class="color-value"><output id="accent-value" for="accent"></output><input id="accent" type="color"></span>
+          </label>
+          <label class="setting-row" for="rule">Secundario
+            <span class="color-value"><output id="rule-value" for="rule"></output><input id="rule" type="color"></span>
+          </label>
+          <label class="setting-row" for="ink">Texto
+            <span class="color-value"><output id="ink-value" for="ink"></output><input id="ink" type="color"></span>
+          </label>
+        </section>
+        <section class="setting-group" aria-labelledby="font-label">
+          <h2 id="font-label">Tipografía</h2>
+          <div class="font-rows">
+            <label class="setting-row" for="title-font">Títulos y cifras
+              <select id="title-font"><option>Newsreader</option><option>Georgia</option><option>DM Sans</option><option>Roboto</option><option>Arial</option></select>
+            </label>
+            <label class="setting-row" for="body-font">Cuerpo
+              <select id="body-font"><option>Roboto</option><option>DM Sans</option><option>Arial</option><option>Georgia</option><option>Newsreader</option></select>
+            </label>
+            <label class="setting-row" for="detail-font">Cargos y etiquetas
+              <select id="detail-font"><option>DM Sans</option><option>Roboto</option><option>Arial</option><option>Georgia</option><option>Newsreader</option></select>
+            </label>
+          </div>
+        </section>
+        <section class="setting-group" aria-labelledby="style-label">
+          <h2 id="style-label">Estilo</h2>
+          <div class="style-options" role="group" aria-labelledby="style-label">
+            <button type="button" data-style="editorial">Editorial</button>
+            <button type="button" data-style="classic">Clásico</button>
+            <button type="button" data-style="minimal">Minimalista</button>
+          </div>
+        </section>
+        <button type="button" class="reset" id="reset">Restablecer diseño</button>
+      </div>
+    </details>
+
+    <section class="preview" aria-label="Vista previa del CV">
+      <div class="preview-bar">
+        <div class="variants" role="group" aria-label="Audiencia del CV" hidden>
+          <button class="variant" type="button" data-variant="fulltime">CTO</button>
+          <button class="variant" type="button" data-variant="consulting">Consultoría</button>
+          <button class="variant" type="button" data-variant="advisory">Asesoría</button>
+        </div>
+        <div class="preview-tools">
+          <label class="language-control" for="cv-language">Idioma del CV
+            <select id="cv-language">
+              <option value="es" lang="es">Español</option>
+              <option value="en" lang="en" selected>English</option>
+              <option value="pt" lang="pt-BR">Português</option>
+            </select>
+          </label>
+          <span class="page-info" id="page-info" role="status"></span>
+        </div>
+      </div>
+      <div class="preview-frame">
+        <div class="document" id="cv" lang="en"></div>
+      </div>
+      <noscript>Activa JavaScript para elegir el idioma y la versión del CV y personalizar su diseño.</noscript>
+    </section>
+  </main>
+
+  <script type="application/json" id="cv-data">
+{
+  "personal": {
+    "name": "Rafael Ernesto Pino",
+    "phone": "+57 300 215 0908",
+    "email": "repinor@gmail.com",
+    "linkedin": "linkedin.com/in/rafapino",
+    "location": "Bogotá, Colombia",
+    "languages": [
+      {
+        "language": "Spanish",
+        "level": "Native"
+      },
+      {
+        "language": "English",
+        "level": "C1 · Professional"
+      },
+      {
+        "language": "Portuguese",
+        "level": "Conversational"
+      }
+    ]
+  },
+  "headlines": {
+    "fulltime": "CHIEF TECHNOLOGY OFFICER · AI-ENABLED ENGINEERING · DIGITAL PRODUCT",
+    "consulting": "TECHNOLOGY CONSULTING · AI-ENABLED SDLC · ENGINEERING TRANSFORMATION",
+    "advisory": "TECHNOLOGY ADVISORY · BOARD MEMBER · CTO MENTOR"
+  },
+  "summaries": {
+    "fulltime": "Technology executive leading engineering organizations across consulting, nearshore delivery, and digital product firms in \u003cstrong>LATAM and the US market\u003c/strong>. Proven track record \u003cstrong>designing and building digital products\u003c/strong> using agentic and AI-automated approaches, partnering with Sales to close enterprise deals, and driving measurable outcomes through \u003cstrong>AI-assisted software engineering\u003c/strong>. Pioneer in disciplined AI adoption — deploying \u003cstrong>Claude Code, Codex, and agentic workflows\u003c/strong> to achieve \u003cstrong>10x delivery acceleration\u003c/strong> in production. Deep expertise in \u003cstrong>cloud-native platforms\u003c/strong>, modern SDLC, and building high-performance teams from the ground up. \u003cstrong>Certified Coach\u003c/strong> focused on engineering leadership transformation. Fluent English; available for executive remote engagement.",
+    "consulting": "Technology consultant, methodology architect, and \u003cstrong>digital product builder\u003c/strong> with proven frameworks for scaling software organizations. Creator of the \u003cstrong>TELAR methodology\u003c/strong> and author of \u003cstrong>La Segunda Industrialización del Software\u003c/strong> (EN/ES/PT). Pioneer in \u003cstrong>AI-assisted software engineering\u003c/strong> — achieving \u003cstrong>10x delivery acceleration\u003c/strong> through disciplined adoption of Claude Code, Codex, and \u003cstrong>agentic AI workflows\u003c/strong>. Expert in \u003cstrong>designing and building digital products\u003c/strong> from concept to production using automated approaches. Deep expertise transforming engineering organizations from \u003cstrong>3 to 240+ engineers\u003c/strong>. \u003cstrong>Certified Coach\u003c/strong> focused on engineering leadership. Fluent English; available for remote consulting engagements.",
+    "advisory": "Technology executive, Enterprise Architect, and \u003cstrong>digital product strategist\u003c/strong> with deep expertise building and transforming engineering organizations. Creator of the \u003cstrong>TELAR methodology\u003c/strong> and author of \u003cstrong>La Segunda Industrialización del Software\u003c/strong>. Pioneer in \u003cstrong>AI-assisted software engineering\u003c/strong> and \u003cstrong>agentic product development\u003c/strong>. Expert in designing and implementing \u003cstrong>AI-automated workflows\u003c/strong> for rapid product delivery. \u003cstrong>Certified Coach\u003c/strong> focused on engineering leadership development."
+  },
+  "metrics": {
+    "delivery_speed_ai": "10x",
+    "bug_reduction": "60%",
+    "integration_speed_sdd": "5x",
+    "engineers_at_peak": "240+",
+    "enterprise_deals": "~$12M",
+    "engineers_scaled": "3→165+",
+    "companies_founded": 3,
+    "years_experience": "26+"
+  },
+  "experience": [
+    {
+      "id": "r5",
+      "title": "Director of Technology",
+      "company": "Grupo R5 & Manta Seguros",
+      "location": "Bogotá",
+      "period": "Jan 2025 – Present",
+      "description": "InsurTech group: a digital insurance broker and Colombia's first fully digital insurer. Owns the full technology organization — \u003cstrong>36 people\u003c/strong> across engineering, QA, DevOps, infrastructure, and architecture — for a platform issuing 60K+ policies per month.",
+      "bullets": [
+        "\u003cstrong>Envisioned, defined and implemented\u003c/strong> the product vision and architectural governance of Manta Seguros' CORE insurance platform, from concept to production.",
+        "Led the \u003cstrong>complete redesign and modernization\u003c/strong> of Grupo R5's broker CORE, replacing its full technology stack.",
+        "Designed the \u003cstrong>AI-assisted development strategy\u003c/strong> (Claude Code, Cursor, Windsurf), governed by Spec-Driven Development: \u003cstrong>10x\u003c/strong> faster delivery, \u003cstrong>5x\u003c/strong> faster integration.",
+        "Deployed company-wide \u003cstrong>test automation\u003c/strong>, cutting production bugs by \u003cstrong>60%\u003c/strong>; represented technology before executives and regulators."
+      ]
+    },
+    {
+      "id": "dvp",
+      "title": "Technology Director",
+      "company": "DoubleVPartners",
+      "location": null,
+      "period": "Apr 2023 – Aug 2023",
+      "description": "Cloud-native consultancy specializing in non-conventional solutions (Blockchain, video streaming, distributed systems) across multiple industries.",
+      "bullets": [
+        "Led a \u003cstrong>50-person engineering organization\u003c/strong> (Dev, Architecture, DevOps) delivering 100% cloud-native solutions; introduced \u003cstrong>AI-assisted tooling\u003c/strong> for \u003cstrong>~2x delivery velocity\u003c/strong>.",
+        "\u003cstrong>Technical authority in enterprise sales\u003c/strong> (proposals, estimates, demos) and owner of engineering practices, leadership development, and portfolio governance."
+      ]
+    },
+    {
+      "id": "ubanku",
+      "title": "CTO & Co-Founder",
+      "company": "Ubanku",
+      "location": null,
+      "period": "May 2022 – Apr 2023",
+      "description": "Colombian neobank for the financial inclusion of young people across Latin America: accounts, savings, microcredit, and tokenized investments.",
+      "bullets": [
+        "Joining as CTO and co-founder gave investors the confidence to close a \u003cstrong>~US$1M pre-seed round\u003c/strong>; built the founding team's technical capabilities for the \u003cstrong>beta launch\u003c/strong>.",
+        "Designed an \u003cstrong>event-driven microservices architecture\u003c/strong> for the banking and eCommerce platform and led delivery through an \u003cstrong>external engineering partner\u003c/strong>."
+      ]
+    },
+    {
+      "id": "asesoftware",
+      "title": "Engineering Manager",
+      "company": "Asesoftware",
+      "location": null,
+      "period": "Mar 2021 – Feb 2022",
+      "description": "Leading Colombian software consultancy and product studio (240-person firm) serving government, financial, and enterprise clients.",
+      "bullets": [
+        "Managed \u003cstrong>70+ engineers\u003c/strong> through 3 Technical Managers and 9 Tech Leads, delivering \u003cstrong>6 concurrent projects\u003c/strong> across software-factory and product models.",
+        "Built the \u003cstrong>product development area from scratch\u003c/strong> (UX, product design, engineering) and co-designed strategic initiatives with the CEO."
+      ]
+    },
+    {
+      "id": "togroow",
+      "title": "CTO & Co-Founder",
+      "company": "Togroow",
+      "location": null,
+      "period": "Feb 2016 – Mar 2021 · Aug 2023 – Jan 2024",
+      "description": "Co-led and co-created the vision and implementation of a B2B SaaS ecosystem from idea to production — a business social network with integrated eCommerce, digital presence, marketplace, and payments.",
+      "bullets": [
+        "Defined and executed the \u003cstrong>full technical vision\u003c/strong>: solution architecture, vendor management, cloud infrastructure (Google Cloud), and roadmap.",
+        "Returned in 2023 to lead a \u003cstrong>full cloud migration\u003c/strong> to Google Cloud Platform.",
+        "Built and shipped a \u003cstrong>multi-tenant platform\u003c/strong> combining social networking, eCommerce storefronts, payments, and a unified marketplace."
+      ]
+    },
+    {
+      "id": "globant",
+      "title": "Technical Director",
+      "company": "Globant (NASDAQ: GLOB)",
+      "location": null,
+      "period": "May 2014 – Jul 2015",
+      "description": null,
+      "bullets": [
+        "Led \u003cstrong>30-person nearshore engineering teams\u003c/strong> serving Disney Parks and TripAdvisor — direct executive engagement with US-based clients."
+      ]
+    },
+    {
+      "id": "digitalware",
+      "title": "VP Innovation & Development",
+      "company": "Digitalware",
+      "location": null,
+      "period": "Jul 2015 – Feb 2016",
+      "description": null,
+      "bullets": [
+        "Led a \u003cstrong>240-person technology organization\u003c/strong> across 4 product lines (ERP, Payroll, Healthcare ERP). Drove \u003cstrong>agile transformation\u003c/strong> and engineering leadership program."
+      ]
+    },
+    {
+      "id": "etask",
+      "title": "CTO & Co-Founder",
+      "company": "eTask Technologies (now Hydra Cloud)",
+      "location": null,
+      "period": "Jun 2009 – Dec 2013",
+      "description": "Co-led and co-created the vision and implementation of an enterprise methodology governance platform from idea to production — enabling organizations to implement any methodological model while providing tools for project/portfolio governance and execution.",
+      "bullets": [
+        "Built and led a \u003cstrong>65-person organization\u003c/strong> from founding to production. Architected a platform based on \u003cstrong>SPEM and UMA standards\u003c/strong> for reusable process assets.",
+        "Defined \u003cstrong>business model and go-to-market strategy\u003c/strong> with the CEO. The platform became the foundation for modern methodology industrialization."
+      ]
+    },
+    {
+      "id": "heinsohn",
+      "title": "SW Factory Dir. → Presales Dir. → Project Manager",
+      "company": "Heinsohn",
+      "location": null,
+      "period": "Oct 2002 – May 2007",
+      "description": null,
+      "bullets": [
+        "Scaled the Software Factory from \u003cstrong>3 to 165+ engineers\u003c/strong>. As Presales Director, contributed to closing \u003cstrong>~$12M USD\u003c/strong> in enterprise deals across Energy, Financial, and Government."
+      ]
+    },
+    {
+      "id": "unisys",
+      "title": "Lead Architect & Consultant C6",
+      "company": "Unisys Colombia",
+      "location": null,
+      "period": "Jun 1997 – Oct 2002",
+      "description": null,
+      "bullets": [
+        "Promoted from developer to \u003cstrong>Lead Architect in 5 years\u003c/strong>. Delivered Banco Santander's Banca Personal, Banca Empresarial & Core de Oficinas — \u003cstrong>deep Financial Services expertise\u003c/strong>."
+      ]
+    }
+  ],
+  "methodologies": [
+    {
+      "id": "etask_hydra",
+      "name": "eTask / Hydra",
+      "description": "Methodology governance platform based on SPEM/UMA standards for professional services business",
+      "icon": "sun"
+    },
+    {
+      "id": "book",
+      "name": "Published Book",
+      "title": "La Segunda Industrialización del Software",
+      "languages": [
+        "English",
+        "Spanish",
+        "Portuguese"
+      ],
+      "icon": "book"
+    },
+    {
+      "id": "telar",
+      "name": "TELAR Method",
+      "description": "AI-native institutional SDLC with full traceability & compliance built-in",
+      "icon": "layers"
+    },
+    {
+      "id": "spiral",
+      "name": "SPIRAL",
+      "description": "AI-assisted methodology for rapid MVP construction — from concept to production in weeks",
+      "icon": "spiral"
+    }
+  ],
+  "consulting_services": [
+    {
+      "id": "ai_engineering",
+      "title": "AI-Assisted Engineering",
+      "bullets": [
+        "AI Harness Engineering — designing systems that govern AI models",
+        "AI Coding Agents adoption (Claude Code, Codex, OpenCode)",
+        "Spec-Driven Development & productivity measurement"
+      ]
+    },
+    {
+      "id": "architecture",
+      "title": "Architecture Advisory",
+      "bullets": [
+        "Scalable systems architecture design & review",
+        "Microservices, event-driven & distributed systems",
+        "Architecture governance & decision frameworks"
+      ]
+    },
+    {
+      "id": "sdlc",
+      "title": "SDLC Modernization",
+      "bullets": [
+        "TELAR methodology implementation",
+        "Process governance & automation frameworks",
+        "Quality engineering & test automation strategy"
+      ]
+    },
+    {
+      "id": "ddd",
+      "title": "Complex Systems Envisioning, Specification & Design",
+      "bullets": [
+        "DDD & Event Storming facilitation workshops",
+        "Domain modeling & bounded context design",
+        "Strategic alignment between business & engineering"
+      ]
+    },
+    {
+      "id": "org_design",
+      "title": "Engineering Org Design",
+      "bullets": [
+        "Engineering organization scaling & structure",
+        "Career paths & technical ladder design",
+        "Team topology & delivery model optimization"
+      ]
+    },
+    {
+      "id": "leadership",
+      "title": "Technical Leadership Training",
+      "bullets": [
+        "Tech lead & engineering manager development",
+        "Leadership coaching for technical professionals",
+        "High-performance team building & culture"
+      ]
+    }
+  ],
+  "advisory_value": [
+    {
+      "id": "ai_transformation",
+      "title": "AI Transformation",
+      "description": "Strategic guidance on AI-assisted engineering adoption. Proven frameworks achieving 10x delivery acceleration through disciplined AI tool integration."
+    },
+    {
+      "id": "engineering_scale",
+      "title": "Engineering Scale",
+      "description": "Expertise scaling engineering organizations from startup to enterprise. Team topology design, technical career paths, and delivery model optimization."
+    },
+    {
+      "id": "architecture_systems",
+      "title": "Architecture & Systems",
+      "description": "Advisory on scalable architectures, distributed systems, and platform strategy. DDD, Event Sourcing, and microservices at enterprise scale."
+    }
+  ],
+  "engagement_models": [
+    {
+      "id": "assessment",
+      "title": "Strategic Assessment",
+      "description": "2–4 week deep-dive into current engineering practices, AI readiness assessment, and comprehensive transformation roadmap development."
+    },
+    {
+      "id": "project",
+      "title": "Project-Based",
+      "description": "Fixed-scope engagements for MVP development, architecture design, or AI integration projects with clear deliverables and timelines."
+    },
+    {
+      "id": "implementation",
+      "title": "Implementation Partnership",
+      "description": "3–12 month hands-on engagement to implement AI-assisted workflows, TELAR methodology, and drive organizational transformation."
+    },
+    {
+      "id": "fractional",
+      "title": "Fractional CTO",
+      "description": "Part-time technology leadership for startups and scale-ups: strategic guidance, architecture decisions, and team coaching."
+    }
+  ],
+  "skills": {
+    "ai_assisted": {
+      "primary": [
+        "Claude Code",
+        "SDD / OpenSpec",
+        "Harness AI"
+      ],
+      "secondary": [
+        "Cursor",
+        "Windsurf",
+        "GitHub Copilot",
+        "Devin"
+      ]
+    },
+    "architecture": {
+      "primary": [
+        "Microservices",
+        "Hexagonal",
+        "DDD",
+        "Clean Architecture",
+        "SOA",
+        "Event Driven",
+        "Event Sourcing & CQRS"
+      ],
+      "secondary": [
+        "System Design"
+      ]
+    },
+    "cloud": {
+      "primary": [
+        "AWS",
+        "Azure",
+        "Cloud-Native"
+      ],
+      "secondary": [
+        "Google Cloud",
+        "CI/CD",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "leadership": {
+      "primary": [
+        "SDLC Modernization",
+        "Agile / Scrum"
+      ],
+      "secondary": [
+        "Nearshore Delivery",
+        "Distributed Teams",
+        "Executive Presales"
+      ]
+    }
+  },
+  "education": [
+    {
+      "degree": "Systems Engineering",
+      "institution": "Universidad Nacional de Colombia",
+      "year": 1998
+    },
+    {
+      "degree": "Enterprise Software Architecture",
+      "institution": "Pontificia Universidad Javeriana",
+      "year": 2008
+    },
+    {
+      "degree": "Professional Negotiation",
+      "institution": "CESA — Hernán Serna",
+      "year": 2007
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Sun Certified Java Programmer",
+      "issuer": "Sun Microsystems",
+      "year": 2003
+    },
+    {
+      "name": "Certified Scrum Master & Product Owner",
+      "issuer": "Scrum Alliance",
+      "year": 2013
+    },
+    {
+      "name": "Coach & Facilitator",
+      "issuer": "Altamente",
+      "year": 2017
+    }
+  ],
+  "industries": [
+    "InsurTech",
+    "FinTech",
+    "Banking",
+    "Healthcare",
+    "Government",
+    "Media"
+  ],
+  "select_clients": [
+    "Disney Parks",
+    "TripAdvisor",
+    "Banco Santander",
+    "Globant",
+    "InsurTech Colombia",
+    "Financial Services",
+    "Government (LATAM)",
+    "Healthcare / ERP"
+  ],
+  "translations": {
+    "en": {
+      "lang": "en",
+      "labels": {
+        "variant_names": {
+          "fulltime": "CTO",
+          "consulting": "Consulting",
+          "advisory": "Advisory"
+        },
+        "sections": {
+          "experience": "Professional Experience",
+          "experience_continued": "Professional Experience (continued)",
+          "thought_leadership": "Methodologies & Thought Leadership",
+          "skills": "Skills & Expertise",
+          "credentials": "Education, Certifications & Languages",
+          "methodologies": "Methodologies & IP",
+          "services": "Consulting Services",
+          "clients": "Select Clients & Industries",
+          "engagements": "Selected Engagements & Track Record",
+          "engagement_model": "Engagement Model",
+          "consulting_credentials": "Education & Certifications",
+          "advisory_value": "Advisory Value",
+          "executive_track_record": "Executive Track Record",
+          "intellectual_property": "Intellectual Property",
+          "advisory_credentials": "Education & Credentials"
+        },
+        "metrics": {
+          "delivery_speed_ai": "Delivery acceleration",
+          "bug_reduction": "Fewer production bugs",
+          "integration_speed_sdd": "Faster integration",
+          "engineers_at_peak": "Engineers led",
+          "enterprise_deals": "Enterprise deals",
+          "engineers_scaled": "Engineering scale",
+          "companies_founded": "Companies co-founded",
+          "years_experience": "Years of experience"
+        },
+        "skills": {
+          "ai_assisted": "AI-Assisted Development",
+          "ai_engineering": "AI Engineering",
+          "architecture": "Architecture",
+          "cloud": "Cloud & Platform",
+          "platform": "Platform & Cloud",
+          "leadership": "Engineering Leadership"
+        },
+        "credentials": {
+          "education": "Education",
+          "certifications": "Certifications",
+          "languages": "Languages"
+        },
+        "pagination": "PAGE {page} OF {total}",
+        "advisory_footer": "AVAILABLE FOR ADVISORY & BOARD ROLES · REMOTE ENGAGEMENT"
+      },
+      "engagements": {
+        "r5": "Co-led two core insurance platforms from concept to production (60K+ policies/month). AI-assisted engineering accelerated delivery 10x; test automation cut production bugs 60%.",
+        "togroow": "Co-led a multi-tenant B2B SaaS platform for eCommerce, payments, and a marketplace from idea to production, and its migration to Google Cloud.",
+        "ubanku": "Co-founded a youth-focused LATAM neobank as CTO; joining gave investors the confidence to close a ~US$1M pre-seed round.",
+        "globant": "Led 30-person nearshore engineering teams serving Disney Parks and TripAdvisor and worked directly with US-based executives.",
+        "etask": "Co-led a methodology governance platform (SPEM/UMA) from idea to production and built a 65-person organization.",
+        "heinsohn": "Scaled the Software Factory from 3 to 165+ engineers and contributed to closing ~$12M USD in enterprise deals as Presales Director.",
+        "unisys": "Led architecture work for Banco Santander’s personal and business banking platforms and its branch core system."
+      },
+      "advisory_engagements": {
+        "r5": "Co-led vision and implementation of core insurance platform from idea to production (60K+ policies/month). Led complete redesign of broker's CORE system.",
+        "digitalware": "Led a 240-person technology organization across four product lines and drove agile transformation.",
+        "heinsohn": "Scaled the Software Factory from 3 to 165+ engineers and helped close ~$12M in enterprise deals.",
+        "etask": "Co-led the vision and implementation of a methodology governance platform from idea to production."
+      }
+    },
+    "es": {
+      "lang": "es",
+      "labels": {
+        "variant_names": {
+          "fulltime": "CTO",
+          "consulting": "Consultoría",
+          "advisory": "Asesoría"
+        },
+        "sections": {
+          "experience": "Experiencia profesional",
+          "experience_continued": "Experiencia profesional (continuación)",
+          "thought_leadership": "Metodologías y aportes al sector",
+          "skills": "Competencias y especialidades",
+          "credentials": "Formación, certificaciones e idiomas",
+          "methodologies": "Metodologías y propiedad intelectual",
+          "services": "Servicios de consultoría",
+          "clients": "Clientes y sectores destacados",
+          "engagements": "Proyectos y resultados destacados",
+          "engagement_model": "Modalidades de colaboración",
+          "consulting_credentials": "Formación y certificaciones",
+          "advisory_value": "Áreas de asesoría",
+          "executive_track_record": "Trayectoria ejecutiva",
+          "intellectual_property": "Propiedad intelectual",
+          "advisory_credentials": "Formación y credenciales"
+        },
+        "metrics": {
+          "delivery_speed_ai": "Entregas más rápidas",
+          "bug_reduction": "Menos errores en producción",
+          "integration_speed_sdd": "Integración más rápida",
+          "engineers_at_peak": "Ingenieros liderados",
+          "enterprise_deals": "Negocios empresariales",
+          "engineers_scaled": "Crecimiento del equipo",
+          "companies_founded": "Empresas cofundadas",
+          "years_experience": "Años de experiencia"
+        },
+        "skills": {
+          "ai_assisted": "Desarrollo asistido por IA",
+          "ai_engineering": "Ingeniería de IA",
+          "architecture": "Arquitectura",
+          "cloud": "Nube y plataformas",
+          "platform": "Plataformas y nube",
+          "leadership": "Liderazgo de ingeniería"
+        },
+        "credentials": {
+          "education": "Formación",
+          "certifications": "Certificaciones",
+          "languages": "Idiomas"
+        },
+        "pagination": "PÁGINA {page} DE {total}",
+        "advisory_footer": "DISPONIBLE PARA ASESORÍA Y JUNTAS DIRECTIVAS · COLABORACIÓN REMOTA"
+      },
+      "engagements": {
+        "r5": "Co-lideró dos plataformas centrales de seguros de la idea a producción (60K+ pólizas/mes). Con IA, entregas 10 veces más rápidas y 60 % menos errores.",
+        "togroow": "Co-lideró de la idea a producción una plataforma SaaS B2B multiinquilino (comercio electrónico, pagos y marketplace) y su migración a Google Cloud.",
+        "ubanku": "Cofundó como CTO un neobanco para jóvenes en LATAM; su llegada dio a los inversionistas la confianza para cerrar una ronda pre-semilla de ~USD 1 millón.",
+        "globant": "Lideró equipos de ingeniería nearshore de 30 personas para Disney Parks y TripAdvisor. Trabajó directamente con ejecutivos en Estados Unidos.",
+        "etask": "Co-lideró desde la idea hasta producción una plataforma de gobernanza metodológica (SPEM/UMA) y formó una organización de 65 personas.",
+        "heinsohn": "Amplió la fábrica de software de 3 a más de 165 ingenieros y, como director de preventa, contribuyó al cierre de negocios por cerca de USD 12 millones.",
+        "unisys": "Lideró la arquitectura de las plataformas de banca personal y empresarial y del sistema central de sucursales de Banco Santander."
+      },
+      "advisory_engagements": {
+        "r5": "Co-lideró visión e implementación de plataforma central de seguros desde la idea hasta producción (60K+ pólizas/mes). Lideró rediseño completo del CORE del broker.",
+        "digitalware": "Dirigió una organización de tecnología de 240 personas en cuatro líneas de producto e impulsó su transformación ágil.",
+        "heinsohn": "Amplió la fábrica de software de 3 a más de 165 ingenieros y contribuyó al cierre de negocios por cerca de USD 12 millones.",
+        "etask": "Co-lideró la visión e implementación de una plataforma de gobernanza metodológica desde la idea hasta producción."
+      },
+      "content": {
+        "personal": {
+          "languages": [
+            {
+              "language": "Español",
+              "level": "Nativo"
+            },
+            {
+              "language": "Inglés",
+              "level": "C1 · Profesional"
+            },
+            {
+              "language": "Portugués",
+              "level": "Conversacional"
+            }
+          ]
+        },
+        "headlines": {
+          "fulltime": "DIRECTOR DE TECNOLOGÍA (CTO) · INGENIERÍA CON IA · PRODUCTO DIGITAL",
+          "consulting": "CONSULTORÍA TECNOLÓGICA · SDLC CON IA · TRANSFORMACIÓN DE INGENIERÍA",
+          "advisory": "ASESORÍA TECNOLÓGICA · MIEMBRO DE JUNTA DIRECTIVA · MENTOR DE CTO"
+        },
+        "summaries": {
+          "fulltime": "Ejecutivo de tecnología con experiencia al frente de equipos de ingeniería en consultoría, prestación de servicios nearshore y producto digital en \u003cstrong>Latinoamérica y Estados Unidos\u003c/strong>. Experto en \u003cstrong>diseño y construcción de productos digitales\u003c/strong> con enfoques agénticos y automatizados con IA. Pionero en \u003cstrong>ingeniería de software asistida por IA\u003c/strong>. Con \u003cstrong>Claude Code, Codex y flujos de trabajo agénticos\u003c/strong>, aceleró \u003cstrong>10 veces\u003c/strong> las entregas en producción. Experto en \u003cstrong>plataformas nativas de la nube\u003c/strong>, modernización del ciclo de desarrollo y formación de equipos. \u003cstrong>Coach certificado\u003c/strong> en liderazgo de ingeniería. Inglés fluido y disponibilidad para cargos ejecutivos remotos.",
+          "consulting": "Consultor de tecnología, diseñador de metodologías y \u003cstrong>constructor de productos digitales\u003c/strong> para escalar organizaciones de software. Creador de la \u003cstrong>metodología TELAR\u003c/strong> y autor de \u003cstrong>La Segunda Industrialización del Software\u003c/strong> (EN/ES/PT). Pionero en \u003cstrong>ingeniería de software asistida por IA\u003c/strong>. Experto en \u003cstrong>diseño y construcción de productos digitales\u003c/strong> con \u003cstrong>flujos agénticos y automatizados\u003c/strong>. Con Claude Code, Codex y enfoques agénticos, aceleró \u003cstrong>10 veces\u003c/strong> las entregas. Experiencia transformando organizaciones de \u003cstrong>3 a más de 240 ingenieros\u003c/strong>. \u003cstrong>Coach certificado\u003c/strong> en liderazgo de ingeniería. Inglés fluido y disponibilidad para consultoría remota.",
+          "advisory": "Ejecutivo de tecnología, arquitecto empresarial y \u003cstrong>estratega de producto digital\u003c/strong> con experiencia en formar y transformar organizaciones de ingeniería. Creador de la \u003cstrong>metodología TELAR\u003c/strong> y autor de \u003cstrong>La Segunda Industrialización del Software\u003c/strong>. Pionero en \u003cstrong>ingeniería de software asistida por IA\u003c/strong> y \u003cstrong>desarrollo de productos con enfoques agénticos\u003c/strong>. Experto en diseño e implementación de \u003cstrong>flujos automatizados con IA\u003c/strong> para entrega rápida de productos. \u003cstrong>Coach certificado\u003c/strong> en desarrollo de líderes de ingeniería."
+        },
+        "experience": {
+          "r5": {
+            "title": "Director de Tecnología",
+            "company": "Grupo R5 & Manta Seguros",
+            "period": "ene. 2025 – actualidad",
+            "description": "Grupo InsurTech: un broker digital de seguros y la primera aseguradora 100 % digital de Colombia. Dirige toda la tecnología —\u003cstrong>36 personas\u003c/strong> en ingeniería, QA, DevOps, infraestructura y arquitectura— de una plataforma que emite más de 60.000 pólizas al mes.",
+            "bullets": [
+              "\u003cstrong>Concibió, definió e implementó\u003c/strong> la visión de producto y la gobernanza de arquitectura del CORE de Manta Seguros, de la idea a producción.",
+              "Lideró el \u003cstrong>rediseño y modernización completa\u003c/strong> del CORE del broker de Grupo R5 y la sustitución de su stack tecnológico.",
+              "Diseñó la \u003cstrong>estrategia de desarrollo asistido por IA\u003c/strong> (Claude Code, Cursor, Windsurf) con desarrollo guiado por especificaciones: entregas \u003cstrong>10 veces\u003c/strong> e integración \u003cstrong>5 veces\u003c/strong> más rápidas.",
+              "Desplegó \u003cstrong>pruebas automatizadas\u003c/strong> que redujeron un \u003cstrong>60 %\u003c/strong> los errores en producción; representó a tecnología ante la dirección y los reguladores."
+            ]
+          },
+          "dvp": {
+            "title": "Director de Tecnología",
+            "period": "abr. 2023 – ago. 2023",
+            "description": "Consultora de soluciones nativas de la nube para distintos sectores, con proyectos de blockchain, transmisión de video y sistemas distribuidos.",
+            "bullets": [
+              "Lideró \u003cstrong>50 ingenieros\u003c/strong> (desarrollo, arquitectura y DevOps) en soluciones 100 % nativas de la nube; con \u003cstrong>herramientas de IA\u003c/strong> duplicó la velocidad de entrega.",
+              "\u003cstrong>Autoridad técnica en ventas empresariales\u003c/strong> (propuestas, estimaciones, demos); responsable de prácticas de ingeniería, desarrollo de líderes y portafolio."
+            ]
+          },
+          "ubanku": {
+            "title": "CTO y cofundador",
+            "period": "may. 2022 – abr. 2023",
+            "description": "Neobanco colombiano para la inclusión financiera de jóvenes en América Latina: cuentas, ahorro, microcrédito e inversiones tokenizadas.",
+            "bullets": [
+              "Su llegada como CTO y cofundador dio a los inversionistas la confianza para cerrar una \u003cstrong>ronda pre-semilla de cerca de USD 1 millón\u003c/strong>; formó al equipo fundador para el \u003cstrong>lanzamiento beta\u003c/strong>.",
+              "Diseñó una \u003cstrong>arquitectura de microservicios basada en eventos\u003c/strong> para la plataforma bancaria y de comercio electrónico, y lideró su entrega con un \u003cstrong>proveedor externo de ingeniería\u003c/strong>."
+            ]
+          },
+          "asesoftware": {
+            "title": "Gerente de Ingeniería",
+            "period": "mar. 2021 – feb. 2022",
+            "description": "Consultora colombiana de software y estudio de producto de 240 personas, con clientes públicos, financieros y empresariales.",
+            "bullets": [
+              "Dirigió a \u003cstrong>más de 70 ingenieros\u003c/strong> a través de 3 gerentes técnicos y 9 líderes técnicos, con \u003cstrong>6 proyectos simultáneos\u003c/strong> en modelos de fábrica de software y producto.",
+              "Creó el \u003cstrong>área de desarrollo de producto desde cero\u003c/strong> (UX, diseño de producto e ingeniería) y codiseñó iniciativas estratégicas con el CEO."
+            ]
+          },
+          "togroow": {
+            "title": "CTO y cofundador",
+            "period": "feb. 2016 – mar. 2021 · ago. 2023 – ene. 2024",
+            "description": "Co-lideró la visión e implementación de un ecosistema SaaS B2B desde la idea hasta producción para emprendedores con red social empresarial, comercio electrónico, presencia digital, marketplace y pagos.",
+            "bullets": [
+              "Definió y ejecutó la \u003cstrong>visión tecnológica completa\u003c/strong>, con responsabilidad sobre arquitectura, proveedores, infraestructura en Google Cloud y hoja de ruta.",
+              "Regresó en 2023 para liderar la \u003cstrong>migración integral\u003c/strong> a Google Cloud Platform.",
+              "Construyó y lanzó una \u003cstrong>plataforma multiinquilino\u003c/strong> con red social, tiendas en línea, pagos y un marketplace unificado."
+            ]
+          },
+          "globant": {
+            "title": "Director Técnico",
+            "period": "may. 2014 – jul. 2015",
+            "bullets": [
+              "Lideró \u003cstrong>equipos de ingeniería nearshore de 30 personas\u003c/strong> para Disney Parks y TripAdvisor, con interlocución directa con ejecutivos en Estados Unidos."
+            ]
+          },
+          "digitalware": {
+            "title": "Vicepresidente de Innovación y Desarrollo",
+            "period": "jul. 2015 – feb. 2016",
+            "bullets": [
+              "Dirigió una \u003cstrong>organización de tecnología de 240 personas\u003c/strong> en cuatro líneas de producto (ERP, nómina y ERP para salud). Impulsó la \u003cstrong>transformación ágil\u003c/strong> y el desarrollo de líderes de ingeniería."
+            ]
+          },
+          "etask": {
+            "title": "CTO y cofundador",
+            "period": "jun. 2009 – dic. 2013",
+            "description": "Co-lideró la visión e implementación de una plataforma empresarial desde la idea hasta producción para implementar modelos metodológicos y gobernar la ejecución de proyectos y portafolios.",
+            "bullets": [
+              "Formó y lideró una \u003cstrong>organización de 65 personas\u003c/strong> desde la fundación hasta la puesta en producción. Diseñó la plataforma con \u003cstrong>SPEM y UMA\u003c/strong> para reutilizar activos de procesos.",
+              "Definió con el CEO el \u003cstrong>modelo de negocio y la estrategia de comercialización\u003c/strong>. La plataforma sentó las bases para industrializar la gestión metodológica."
+            ],
+            "company": "eTask Technologies (hoy Hydra Cloud)"
+          },
+          "heinsohn": {
+            "title": "Dir. de Fábrica de Software → Dir. de Preventa → Gerente de Proyectos",
+            "period": "oct. 2002 – may. 2007",
+            "bullets": [
+              "Amplió la fábrica de software de \u003cstrong>3 a más de 165 ingenieros\u003c/strong>. Como director de preventa, contribuyó al cierre de negocios por cerca de \u003cstrong>USD 12 millones\u003c/strong> en energía, finanzas y gobierno."
+            ]
+          },
+          "unisys": {
+            "title": "Arquitecto Líder y Consultor C6",
+            "period": "jun. 1997 – oct. 2002",
+            "bullets": [
+              "Pasó de desarrollador a \u003cstrong>arquitecto líder en cinco años\u003c/strong>. Entregó Banca Personal, Banca Empresarial y Core de Oficinas para Banco Santander y consolidó \u003cstrong>experiencia en servicios financieros\u003c/strong>."
+            ]
+          }
+        },
+        "methodologies": {
+          "etask_hydra": {
+            "description": "Plataforma de gobernanza metodológica basada en SPEM y UMA para empresas de servicios profesionales."
+          },
+          "book": {
+            "name": "Libro publicado",
+            "languages": [
+              "inglés",
+              "español",
+              "portugués"
+            ]
+          },
+          "telar": {
+            "name": "Metodología TELAR",
+            "description": "Ciclo de desarrollo institucional nativo de IA con trazabilidad y cumplimiento integrados."
+          },
+          "spiral": {
+            "name": "SPIRAL",
+            "description": "Metodología asistida por IA para construcción rápida de MVPs — del concepto a producción en semanas."
+          }
+        },
+        "consulting_services": {
+          "ai_engineering": {
+            "title": "Ingeniería asistida por IA",
+            "bullets": [
+              "AI Harness Engineering: diseño de sistemas que gobiernan modelos de IA",
+              "Adopción de agentes de código (Claude Code, Codex, OpenCode)",
+              "Desarrollo guiado por especificaciones y medición de productividad"
+            ]
+          },
+          "architecture": {
+            "title": "Asesoría en arquitectura",
+            "bullets": [
+              "Diseño y revisión de arquitecturas escalables",
+              "Microservicios, arquitectura orientada a eventos y sistemas distribuidos",
+              "Gobernanza de arquitectura y marcos de decisión"
+            ]
+          },
+          "sdlc": {
+            "title": "Modernización del ciclo de desarrollo",
+            "bullets": [
+              "Implementación de la metodología TELAR",
+              "Gobernanza de procesos y marcos de automatización",
+              "Ingeniería de calidad y estrategia de pruebas automatizadas"
+            ]
+          },
+          "ddd": {
+            "title": "Concepción, especificación y diseño de sistemas complejos",
+            "bullets": [
+              "Talleres de DDD y Event Storming",
+              "Modelado de dominios y diseño de contextos delimitados",
+              "Alineación estratégica entre negocio e ingeniería"
+            ]
+          },
+          "org_design": {
+            "title": "Diseño de organizaciones de ingeniería",
+            "bullets": [
+              "Escalamiento y estructura de equipos de ingeniería",
+              "Planes de carrera y niveles técnicos",
+              "Topología de equipos y optimización del modelo de entrega"
+            ]
+          },
+          "leadership": {
+            "title": "Formación de líderes técnicos",
+            "bullets": [
+              "Formación de líderes técnicos y gerentes de ingeniería",
+              "Coaching de liderazgo para profesionales de tecnología",
+              "Formación de equipos de alto desempeño y cultura de trabajo"
+            ]
+          }
+        },
+        "advisory_value": {
+          "ai_transformation": {
+            "title": "Transformación con IA",
+            "description": "Orientación estratégica para adoptar IA en ingeniería. Marcos de trabajo que han acelerado 10 veces las entregas."
+          },
+          "engineering_scale": {
+            "title": "Escalamiento de ingeniería",
+            "description": "Crecimiento de equipos desde startups hasta grandes empresas. Diseño de equipos, carreras técnicas y modelos de entrega."
+          },
+          "architecture_systems": {
+            "title": "Arquitectura y sistemas",
+            "description": "Asesoría en plataformas, arquitecturas escalables y sistemas distribuidos. DDD, Event Sourcing y microservicios a escala empresarial."
+          }
+        },
+        "engagement_models": {
+          "assessment": {
+            "title": "Evaluación estratégica",
+            "description": "En 2 a 4 semanas, revisa prácticas de ingeniería, evalúa la preparación para adoptar IA y traza una hoja de ruta de transformación."
+          },
+          "project": {
+            "title": "Por proyecto",
+            "description": "Proyectos con alcance definido para desarrollo de MVPs, diseño de arquitectura o integración de IA con entregables y plazos claros."
+          },
+          "implementation": {
+            "title": "Acompañamiento de implementación",
+            "description": "Colaboración de 3 a 12 meses para incorporar flujos de trabajo con IA, implementar TELAR e impulsar cambios organizacionales."
+          },
+          "fractional": {
+            "title": "CTO a tiempo parcial",
+            "description": "Dirección tecnológica para startups y empresas en expansión. Incluye orientación estratégica, decisiones de arquitectura y coaching de equipos."
+          }
+        },
+        "skills": {
+          "architecture": {
+            "primary": [
+              "Microservicios",
+              "Arquitectura hexagonal",
+              "DDD",
+              "Clean Architecture",
+              "SOA",
+              "Event Driven",
+              "Event Sourcing y CQRS"
+            ],
+            "secondary": [
+              "System Design"
+            ]
+          },
+          "cloud": {
+            "primary": [
+              "AWS",
+              "Azure",
+              "Nativo de la nube"
+            ]
+          },
+          "leadership": {
+            "primary": [
+              "Modernización del SDLC",
+              "Ágil / Scrum"
+            ],
+            "secondary": [
+              "Servicios nearshore",
+              "Equipos distribuidos",
+              "Preventa ejecutiva"
+            ]
+          }
+        },
+        "education": [
+          {
+            "degree": "Ingeniería de Sistemas",
+            "institution": "Universidad Nacional de Colombia",
+            "year": 1998
+          },
+          {
+            "degree": "Arquitectura de Software Empresarial",
+            "institution": "Pontificia Universidad Javeriana",
+            "year": 2008
+          },
+          {
+            "degree": "Negociación Profesional",
+            "institution": "CESA — Hernán Serna",
+            "year": 2007
+          }
+        ],
+        "certifications": [
+          {
+            "name": "Programador Java certificado por Sun",
+            "issuer": "Sun Microsystems",
+            "year": 2003
+          },
+          {
+            "name": "Certificación Scrum Master y Product Owner",
+            "issuer": "Scrum Alliance",
+            "year": 2013
+          },
+          {
+            "name": "Coach y facilitador",
+            "issuer": "Altamente",
+            "year": 2017
+          }
+        ],
+        "industries": [
+          "InsurTech",
+          "FinTech",
+          "Banca",
+          "Salud",
+          "Gobierno",
+          "Medios"
+        ],
+        "select_clients": [
+          "Disney Parks",
+          "TripAdvisor",
+          "Banco Santander",
+          "Globant",
+          "InsurTech Colombia",
+          "Servicios financieros",
+          "Gobierno (Latinoamérica)",
+          "Salud / ERP"
+        ]
+      }
+    },
+    "pt": {
+      "lang": "pt-BR",
+      "labels": {
+        "variant_names": {
+          "fulltime": "CTO",
+          "consulting": "Consultoria",
+          "advisory": "Assessoria"
+        },
+        "sections": {
+          "experience": "Experiência profissional",
+          "experience_continued": "Experiência profissional (continuação)",
+          "thought_leadership": "Metodologias e contribuições ao setor",
+          "skills": "Competências e especialidades",
+          "credentials": "Formação, certificações e idiomas",
+          "methodologies": "Metodologias e propriedade intelectual",
+          "services": "Serviços de consultoria",
+          "clients": "Clientes e setores em destaque",
+          "engagements": "Projetos e resultados em destaque",
+          "engagement_model": "Modelos de atuação",
+          "consulting_credentials": "Formação e certificações",
+          "advisory_value": "Áreas de assessoria",
+          "executive_track_record": "Trajetória executiva",
+          "intellectual_property": "Propriedade intelectual",
+          "advisory_credentials": "Formação e credenciais"
+        },
+        "metrics": {
+          "delivery_speed_ai": "Entregas mais rápidas",
+          "bug_reduction": "Menos falhas em produção",
+          "integration_speed_sdd": "Integração mais rápida",
+          "engineers_at_peak": "Engenheiros sob liderança",
+          "enterprise_deals": "Contratos corporativos",
+          "engineers_scaled": "Crescimento da equipe",
+          "companies_founded": "Empresas cofundadas",
+          "years_experience": "Anos de experiência"
+        },
+        "skills": {
+          "ai_assisted": "Desenvolvimento assistido por IA",
+          "ai_engineering": "Engenharia de IA",
+          "architecture": "Arquitetura",
+          "cloud": "Nuvem e plataformas",
+          "platform": "Plataformas e nuvem",
+          "leadership": "Liderança de engenharia"
+        },
+        "credentials": {
+          "education": "Formação",
+          "certifications": "Certificações",
+          "languages": "Idiomas"
+        },
+        "pagination": "PÁGINA {page} DE {total}",
+        "advisory_footer": "DISPONÍVEL PARA ASSESSORIA E CONSELHOS DE ADMINISTRAÇÃO · ATUAÇÃO REMOTA"
+      },
+      "engagements": {
+        "r5": "Co-liderou duas plataformas centrais de seguros da ideia à produção (60K+ apólices/mês). Com IA, entregas 10 vezes mais rápidas e 60% menos falhas.",
+        "togroow": "Co-liderou da ideia à produção uma plataforma SaaS B2B multi-inquilino (comércio eletrônico, pagamentos e marketplace) e sua migração para o Google Cloud.",
+        "ubanku": "Cofundou como CTO um neobanco para jovens na América Latina; sua chegada deu aos investidores a confiança para fechar uma rodada pré-seed de ~US$ 1 milhão.",
+        "globant": "Liderou equipes de engenharia nearshore de 30 pessoas para Disney Parks e TripAdvisor. Trabalhou diretamente com executivos nos Estados Unidos.",
+        "etask": "Co-liderou da ideia à produção uma plataforma de governança metodológica (SPEM/UMA) e montou uma organização de 65 pessoas.",
+        "heinsohn": "Ampliou a fábrica de software de 3 para mais de 165 engenheiros e, como diretor de pré-vendas, contribuiu para fechar cerca de US$ 12 milhões em contratos corporativos.",
+        "unisys": "Liderou a arquitetura das plataformas de banca pessoal e empresarial e do core de agências do Banco Santander."
+      },
+      "advisory_engagements": {
+        "r5": "Co-liderou visão e implementação de plataforma central de seguros desde a ideia até a produção (60K+ apólices/mês). Liderou redesenho completo do CORE do broker.",
+        "digitalware": "Liderou uma organização de tecnologia de 240 pessoas em quatro linhas de produto e impulsionou a transformação ágil.",
+        "heinsohn": "Ampliou a fábrica de software de 3 para mais de 165 engenheiros e ajudou a fechar cerca de US$ 12 milhões em contratos corporativos.",
+        "etask": "Co-liderou a visão e implementação de uma plataforma de governança metodológica desde a ideia até a produção."
+      },
+      "content": {
+        "personal": {
+          "location": "Bogotá, Colômbia",
+          "languages": [
+            {
+              "language": "Espanhol",
+              "level": "Nativo"
+            },
+            {
+              "language": "Inglês",
+              "level": "C1 · Profissional"
+            },
+            {
+              "language": "Português",
+              "level": "Conversação"
+            }
+          ]
+        },
+        "headlines": {
+          "fulltime": "DIRETOR DE TECNOLOGIA (CTO) · ENGENHARIA COM IA · PRODUTO DIGITAL",
+          "consulting": "CONSULTORIA EM TECNOLOGIA · SDLC COM IA · TRANSFORMAÇÃO DA ENGENHARIA",
+          "advisory": "ASSESSORIA EM TECNOLOGIA · CONSELHEIRO DE ADMINISTRAÇÃO · MENTOR DE CTO"
+        },
+        "summaries": {
+          "fulltime": "Executivo de tecnologia com experiência na liderança de equipes de engenharia em consultoria, operações nearshore e produto digital na \u003cstrong>América Latina e nos Estados Unidos\u003c/strong>. Especialista em \u003cstrong>design e construção de produtos digitais\u003c/strong> com abordagens agênticas e automatizadas com IA. Pioneiro em \u003cstrong>engenharia de software assistida por IA\u003c/strong>. Com \u003cstrong>Claude Code, Codex e fluxos de trabalho agênticos\u003c/strong>, acelerou em \u003cstrong>10 vezes\u003c/strong> as entregas em produção. Especialista em \u003cstrong>plataformas nativas da nuvem\u003c/strong>, modernização do ciclo de desenvolvimento e formação de equipes. \u003cstrong>Coach certificado\u003c/strong> em liderança de engenharia. Inglês fluente e disponibilidade para atuação executiva remota.",
+          "consulting": "Consultor de tecnologia, criador de metodologias e \u003cstrong>construtor de produtos digitais\u003c/strong> para escalar organizações de software. Criador do \u003cstrong>método TELAR\u003c/strong> e autor de \u003cstrong>La Segunda Industrialización del Software\u003c/strong> (EN/ES/PT). Pioneiro em \u003cstrong>engenharia de software assistida por IA\u003c/strong>. Especialista em \u003cstrong>design e construção de produtos digitais\u003c/strong> com \u003cstrong>fluxos agênticos e automatizados\u003c/strong>. Com Claude Code, Codex e abordagens agênticas, acelerou em \u003cstrong>10 vezes\u003c/strong> as entregas. Experiência transformando organizações de \u003cstrong>3 a mais de 240 engenheiros\u003c/strong>. \u003cstrong>Coach certificado\u003c/strong> em liderança de engenharia. Inglês fluente e disponibilidade para consultoria remota.",
+          "advisory": "Executivo de tecnologia, arquiteto corporativo e \u003cstrong>estrategista de produto digital\u003c/strong> com experiência em formar e transformar organizações de engenharia. Criador do \u003cstrong>método TELAR\u003c/strong> e autor de \u003cstrong>La Segunda Industrialización del Software\u003c/strong>. Pioneiro em \u003cstrong>engenharia de software assistida por IA\u003c/strong> e \u003cstrong>desenvolvimento de produtos com abordagens agênticas\u003c/strong>. Especialista em design e implementação de \u003cstrong>fluxos automatizados com IA\u003c/strong> para entrega rápida de produtos. \u003cstrong>Coach certificado\u003c/strong> em desenvolvimento de lideranças de engenharia."
+        },
+        "experience": {
+          "r5": {
+            "title": "Diretor de Tecnologia",
+            "company": "Grupo R5 & Manta Seguros",
+            "period": "jan. 2025 – atual",
+            "description": "Grupo InsurTech: uma corretora digital de seguros e a primeira seguradora 100% digital da Colômbia. Lidera toda a tecnologia — \u003cstrong>36 pessoas\u003c/strong> em engenharia, QA, DevOps, infraestrutura e arquitetura — de uma plataforma que emite mais de 60 mil apólices por mês.",
+            "bullets": [
+              "\u003cstrong>Concebeu, definiu e implementou\u003c/strong> a visão de produto e a governança de arquitetura do CORE da Manta Seguros, da ideia à produção.",
+              "Liderou o \u003cstrong>redesenho e modernização completa\u003c/strong> do CORE da corretora do Grupo R5 e a substituição do seu stack tecnológico.",
+              "Desenhou a \u003cstrong>estratégia de desenvolvimento assistido por IA\u003c/strong> (Claude Code, Cursor, Windsurf) com desenvolvimento orientado por especificações: entregas \u003cstrong>10 vezes\u003c/strong> e integração \u003cstrong>5 vezes\u003c/strong> mais rápidas.",
+              "Implantou \u003cstrong>testes automatizados\u003c/strong> que reduziram em \u003cstrong>60%\u003c/strong> as falhas em produção; representou a tecnologia perante a diretoria e os reguladores."
+            ]
+          },
+          "dvp": {
+            "title": "Diretor de Tecnologia",
+            "period": "abr. 2023 – ago. 2023",
+            "description": "Consultoria de soluções nativas da nuvem para diversos setores, com projetos de blockchain, streaming de vídeo e sistemas distribuídos.",
+            "bullets": [
+              "Liderou \u003cstrong>50 engenheiros\u003c/strong> (desenvolvimento, arquitetura e DevOps) em soluções 100% nativas da nuvem; com \u003cstrong>ferramentas de IA\u003c/strong> dobrou a velocidade de entrega.",
+              "\u003cstrong>Autoridade técnica em vendas corporativas\u003c/strong> (propostas, estimativas, demos); responsável por práticas de engenharia, desenvolvimento de líderes e portfólio."
+            ]
+          },
+          "ubanku": {
+            "title": "CTO e cofundador",
+            "period": "mai. 2022 – abr. 2023",
+            "description": "Neobanco colombiano para a inclusão financeira de jovens na América Latina: contas, poupança, microcrédito e investimentos tokenizados.",
+            "bullets": [
+              "Sua chegada como CTO e cofundador deu aos investidores a confiança para fechar uma \u003cstrong>rodada pré-seed de cerca de US$ 1 milhão\u003c/strong>; preparou a equipe fundadora para o \u003cstrong>lançamento beta\u003c/strong>.",
+              "Desenhou uma \u003cstrong>arquitetura de microsserviços orientada a eventos\u003c/strong> para a plataforma bancária e de comércio eletrônico e liderou a entrega com um \u003cstrong>parceiro externo de engenharia\u003c/strong>."
+            ]
+          },
+          "asesoftware": {
+            "title": "Gerente de Engenharia",
+            "period": "mar. 2021 – fev. 2022",
+            "description": "Consultoria colombiana de software e estúdio de produto com 240 pessoas, atendendo clientes públicos, financeiros e corporativos.",
+            "bullets": [
+              "Gerenciou \u003cstrong>mais de 70 engenheiros\u003c/strong> por meio de 3 gerentes técnicos e 9 líderes técnicos, com \u003cstrong>6 projetos simultâneos\u003c/strong> em modelos de fábrica de software e produto.",
+              "Criou a \u003cstrong>área de desenvolvimento de produto do zero\u003c/strong> (UX, design de produto e engenharia) e codesenhou iniciativas estratégicas com o CEO."
+            ]
+          },
+          "togroow": {
+            "title": "CTO e cofundador",
+            "period": "fev. 2016 – mar. 2021 · ago. 2023 – jan. 2024",
+            "description": "Co-liderou a visão e implementação de um ecossistema SaaS B2B desde a ideia até a produção para empreendedores com rede social empresarial, comércio eletrônico, presença digital, marketplace e pagamentos.",
+            "bullets": [
+              "Definiu e executou a \u003cstrong>visão técnica completa\u003c/strong>, com responsabilidade pela arquitetura, fornecedores, infraestrutura no Google Cloud e roteiro de evolução.",
+              "Retornou em 2023 para liderar a \u003cstrong>migração completa\u003c/strong> para o Google Cloud Platform.",
+              "Construiu e lançou uma \u003cstrong>plataforma multi-inquilino\u003c/strong> com rede social, lojas virtuais, pagamentos e um marketplace unificado."
+            ]
+          },
+          "globant": {
+            "title": "Diretor Técnico",
+            "period": "mai. 2014 – jul. 2015",
+            "bullets": [
+              "Liderou \u003cstrong>equipes de engenharia nearshore de 30 pessoas\u003c/strong> para Disney Parks e TripAdvisor, com contato direto com executivos nos Estados Unidos."
+            ]
+          },
+          "digitalware": {
+            "title": "Vice-presidente de Inovação e Desenvolvimento",
+            "period": "jul. 2015 – fev. 2016",
+            "bullets": [
+              "Liderou uma \u003cstrong>organização de tecnologia de 240 pessoas\u003c/strong> em quatro linhas de produto (ERP, folha de pagamento e ERP para saúde). Impulsionou a \u003cstrong>transformação ágil\u003c/strong> e o desenvolvimento de lideranças de engenharia."
+            ]
+          },
+          "etask": {
+            "title": "CTO e cofundador",
+            "company": "eTask Technologies (hoje Hydra Cloud)",
+            "period": "jun. 2009 – dez. 2013",
+            "description": "Co-liderou a visão e implementação de uma plataforma corporativa desde a ideia até a produção para implementar modelos metodológicos e governar a execução de projetos e portfólios.",
+            "bullets": [
+              "Montou e liderou uma \u003cstrong>organização de 65 pessoas\u003c/strong>, da fundação à entrada em produção. Projetou a plataforma com \u003cstrong>SPEM e UMA\u003c/strong> para reutilizar ativos de processos.",
+              "Definiu com o CEO o \u003cstrong>modelo de negócio e a estratégia de entrada no mercado\u003c/strong>. A plataforma lançou as bases para industrializar a gestão de metodologias."
+            ]
+          },
+          "heinsohn": {
+            "title": "Dir. de Fábrica de Software → Dir. de Pré-vendas → Gerente de Projetos",
+            "period": "out. 2002 – mai. 2007",
+            "bullets": [
+              "Ampliou a fábrica de software de \u003cstrong>3 para mais de 165 engenheiros\u003c/strong>. Como diretor de pré-vendas, contribuiu para fechar cerca de \u003cstrong>US$ 12 milhões\u003c/strong> em contratos nos setores de energia, finanças e governo."
+            ]
+          },
+          "unisys": {
+            "title": "Arquiteto Líder e Consultor C6",
+            "period": "jun. 1997 – out. 2002",
+            "bullets": [
+              "Passou de desenvolvedor a \u003cstrong>arquiteto líder em cinco anos\u003c/strong>. Entregou Banca Personal, Banca Empresarial e Core de Oficinas para o Banco Santander e consolidou \u003cstrong>experiência em serviços financeiros\u003c/strong>."
+            ]
+          }
+        },
+        "methodologies": {
+          "etask_hydra": {
+            "description": "Plataforma de governança metodológica baseada em SPEM e UMA para empresas de serviços profissionais."
+          },
+          "book": {
+            "name": "Livro publicado",
+            "languages": [
+              "inglês",
+              "espanhol",
+              "português"
+            ]
+          },
+          "telar": {
+            "name": "Método TELAR",
+            "description": "Ciclo de desenvolvimento institucional nativo de IA com rastreabilidade e conformidade integradas."
+          },
+          "spiral": {
+            "name": "SPIRAL",
+            "description": "Metodologia assistida por IA para construção rápida de MVPs — do conceito à produção em semanas."
+          }
+        },
+        "consulting_services": {
+          "ai_engineering": {
+            "title": "Engenharia assistida por IA",
+            "bullets": [
+              "AI Harness Engineering: projeto de sistemas que governam modelos de IA",
+              "Adoção de agentes de código (Claude Code, Codex, OpenCode)",
+              "Desenvolvimento orientado por especificações e medição de produtividade"
+            ]
+          },
+          "architecture": {
+            "title": "Assessoria em arquitetura",
+            "bullets": [
+              "Projeto e revisão de arquiteturas escaláveis",
+              "Microsserviços, arquitetura orientada a eventos e sistemas distribuídos",
+              "Governança de arquitetura e estruturas de decisão"
+            ]
+          },
+          "sdlc": {
+            "title": "Modernização do ciclo de desenvolvimento",
+            "bullets": [
+              "Implementação do método TELAR",
+              "Governança de processos e estruturas de automação",
+              "Engenharia de qualidade e estratégia de testes automatizados"
+            ]
+          },
+          "ddd": {
+            "title": "Concepção, especificação e projeto de sistemas complexos",
+            "bullets": [
+              "Oficinas de DDD e Event Storming",
+              "Modelagem de domínios e projeto de contextos delimitados",
+              "Alinhamento estratégico entre negócio e engenharia"
+            ]
+          },
+          "org_design": {
+            "title": "Estruturação de organizações de engenharia",
+            "bullets": [
+              "Escala e estrutura de equipes de engenharia",
+              "Trilhas de carreira e níveis técnicos",
+              "Topologia de equipes e otimização do modelo de entrega"
+            ]
+          },
+          "leadership": {
+            "title": "Formação de lideranças técnicas",
+            "bullets": [
+              "Formação de líderes técnicos e gerentes de engenharia",
+              "Coaching de liderança para profissionais de tecnologia",
+              "Formação de equipes de alto desempenho e cultura de trabalho"
+            ]
+          }
+        },
+        "advisory_value": {
+          "ai_transformation": {
+            "title": "Transformação com IA",
+            "description": "Orientação estratégica para adoção de IA na engenharia. Métodos que aceleraram em 10 vezes as entregas."
+          },
+          "engineering_scale": {
+            "title": "Escala da engenharia",
+            "description": "Crescimento de equipes de startups a grandes empresas. Estruturação de equipes, carreiras técnicas e modelos de entrega."
+          },
+          "architecture_systems": {
+            "title": "Arquitetura e sistemas",
+            "description": "Assessoria em plataformas, arquiteturas escaláveis e sistemas distribuídos. DDD, Event Sourcing e microsserviços em escala corporativa."
+          }
+        },
+        "engagement_models": {
+          "assessment": {
+            "title": "Avaliação estratégica",
+            "description": "Em 2 a 4 semanas, revisa práticas de engenharia, avalia a preparação para adotar IA e define um roteiro de transformação."
+          },
+          "project": {
+            "title": "Por projeto",
+            "description": "Projetos com escopo definido para desenvolvimento de MVPs, design de arquitetura ou integração de IA com entregáveis e prazos claros."
+          },
+          "implementation": {
+            "title": "Parceria de implementação",
+            "description": "Atuação de 3 a 12 meses para incorporar fluxos de trabalho com IA, implementar o método TELAR e impulsionar mudanças organizacionais."
+          },
+          "fractional": {
+            "title": "CTO em tempo parcial",
+            "description": "Liderança de tecnologia para startups e empresas em expansão. Inclui orientação estratégica, decisões de arquitetura e coaching de equipes."
+          }
+        },
+        "skills": {
+          "architecture": {
+            "primary": [
+              "Microsserviços",
+              "Arquitetura hexagonal",
+              "DDD",
+              "Clean Architecture",
+              "SOA",
+              "Event Driven",
+              "Event Sourcing e CQRS"
+            ],
+            "secondary": [
+              "System Design"
+            ]
+          },
+          "cloud": {
+            "primary": [
+              "AWS",
+              "Azure",
+              "Nativo da nuvem"
+            ]
+          },
+          "leadership": {
+            "primary": [
+              "Modernização do SDLC",
+              "Ágil / Scrum"
+            ],
+            "secondary": [
+              "Operações nearshore",
+              "Equipes distribuídas",
+              "Pré-vendas executivas"
+            ]
+          }
+        },
+        "education": [
+          {
+            "degree": "Engenharia de Sistemas",
+            "institution": "Universidad Nacional de Colombia",
+            "year": 1998
+          },
+          {
+            "degree": "Arquitetura de Software Corporativo",
+            "institution": "Pontificia Universidad Javeriana",
+            "year": 2008
+          },
+          {
+            "degree": "Negociação Profissional",
+            "institution": "CESA — Hernán Serna",
+            "year": 2007
+          }
+        ],
+        "certifications": [
+          {
+            "name": "Programador Java certificado pela Sun",
+            "issuer": "Sun Microsystems",
+            "year": 2003
+          },
+          {
+            "name": "Certificação Scrum Master e Product Owner",
+            "issuer": "Scrum Alliance",
+            "year": 2013
+          },
+          {
+            "name": "Coach e facilitador",
+            "issuer": "Altamente",
+            "year": 2017
+          }
+        ],
+        "industries": [
+          "InsurTech",
+          "FinTech",
+          "Setor bancário",
+          "Saúde",
+          "Governo",
+          "Mídia"
+        ],
+        "select_clients": [
+          "Disney Parks",
+          "TripAdvisor",
+          "Banco Santander",
+          "Globant",
+          "InsurTech Colombia",
+          "Serviços financeiros",
+          "Governo (América Latina)",
+          "Saúde / ERP"
+        ]
+      }
+    }
+  }
+}
+  </script>
+  <script>
+    "use strict";
+
+    const { translations, ...source } = JSON.parse(document.querySelector("#cv-data").textContent);
+    const cv = document.querySelector("#cv");
+    const frame = document.querySelector(".preview-frame");
+    const languageControl = document.querySelector("#cv-language");
+    const settings = document.querySelector(".settings");
+    const generatorMode = new URLSearchParams(window.location.search).get("gen") === "true";
+
+    settings.hidden = !generatorMode;
+    document.querySelector(".variants").hidden = !generatorMode;
+    document.querySelector(".layout").classList.toggle("generator", generatorMode);
+
+    function localize(base, translation) {
+      if (translation === undefined) return base;
+      if (translation === null || typeof translation !== "object" || Array.isArray(translation)) return translation;
+      if (Array.isArray(base)) return base.map(item => localize(item, translation[item.id]));
+      const result = { ...base };
+      for (const [key, value] of Object.entries(translation)) result[key] = localize(base?.[key], value);
+      return result;
+    }
+
+    function escapeHtml(value) {
+      const entities = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" };
+      return String(value).replace(/[&<>"']/g, char => entities[char]);
+    }
+
+    function formatText(value) {
+      return String(value).split(/(<\/?strong>)/gi).map(part =>
+        /^<\/?strong>$/i.test(part) ? part.toLowerCase() : escapeHtml(part)
+      ).join("");
+    }
+
+    function svgIcon(name) {
+      const paths = {
+        sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4m0-14.2-1.4 1.4M6.3 17.7l-1.4 1.4"/>',
+        book: '<path d="M12 6.5C9.3 4 5.6 3.8 2.5 5v14c3.1-1.2 6.8-1 9.5 1.5 2.7-2.5 6.4-2.7 9.5-1.5V5C18.4 3.8 14.7 4 12 6.5zm0 0v14"/>',
+        layers: '<path d="m12 3 9 5-9 5-9-5zm-9 9 9 5 9-5M3 16l9 5 9-5"/>',
+        "file-text": '<path d="M6 3h8l4 4v14H6zM14 3v5h4m-9 4h6m-6 4h6"/>',
+        spiral: '<path d="M12 12c0-1.1-.9-2-2-2s-2 1-2 2.5S9.5 16 12 16s5-2.2 5-5-2.5-6-6-6-8 3-8 7.5S7 21 12 21s9-4 9-9-4-9-9-9"/>'
+      };
+      return '<svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' + paths[name] + '</svg>';
+    }
+
+    function header(variant, data) {
+      const person = data.personal;
+      const phone = person.phone.replace(/[^+\d]/g, "");
+      return `<header class="cv-header ${variant === "advisory" ? "centered" : ""}">
+        <div class="identity">
+          <h1>${escapeHtml(person.name)}</h1>
+          <p class="headline">${escapeHtml(data.headlines[variant])}</p>
+        </div>
+        <div class="contacts">
+          <span>${escapeHtml(person.location)}</span>
+          <a href="tel:${escapeHtml(phone)}">${escapeHtml(person.phone)}</a>
+          <a href="mailto:${escapeHtml(person.email)}">${escapeHtml(person.email)}</a>
+          <a href="https://${escapeHtml(person.linkedin)}">${escapeHtml(person.linkedin)}</a>
+        </div>
+      </header>`;
+    }
+
+    function section(title, content, extraClass = "") {
+      return `<section class="cv-section ${extraClass}"><h2>${escapeHtml(title)}</h2>${content}</section>`;
+    }
+
+    function page(content, footer, extraClass = "") {
+      return `<article class="sheet ${extraClass}">${content}<footer><span>${escapeHtml(footer)}</span></footer></article>`;
+    }
+
+    function list(items, columns = false) {
+      return `<ul class="bullets ${columns ? "columns" : ""}" role="list">${items.map(item => `<li>${formatText(item)}</li>`).join("")}</ul>`;
+    }
+
+    function metrics(items, values, labels) {
+      return `<div class="metrics">${items.map(key => `
+        <div class="metric" data-metric="${escapeHtml(key)}"><strong>${escapeHtml(values[key])}</strong><span>${escapeHtml(labels[key])}</span></div>
+      `).join("")}</div>`;
+    }
+
+    function roles(ids, experience, columns = false) {
+      const items = ids.map(id => {
+        const role = experience[id];
+        return `<article class="role">
+          <div class="role-head">
+            <h3>${escapeHtml(role.title)} <span class="company">· ${escapeHtml(role.company)}</span></h3>
+            <span class="period">${escapeHtml(role.period)}${role.location ? " · " + escapeHtml(role.location) : ""}</span>
+          </div>
+          ${role.description ? `<p class="role-description">${formatText(role.description)}</p>` : ""}
+          ${list(role.bullets, columns)}
+        </article>`;
+      });
+      return `<div class="roles">${items.join("")}</div>`;
+    }
+
+    function cards(items, columns, extraClass = "") {
+      return `<div class="card-grid ${extraClass}" style="--columns:${columns}">
+        ${items.map(item => `<article class="card">
+          ${item.icon ? svgIcon(item.icon) : ""}
+          <h3>${escapeHtml(item.title)}</h3>
+          ${item.period ? `<p class="period">${escapeHtml(item.period)}</p>` : ""}
+          ${item.description ? `<p>${formatText(item.description)}</p>` : ""}
+          ${item.bullets ? list(item.bullets) : ""}
+        </article>`).join("")}
+      </div>`;
+    }
+
+    function methods(data, advisory = false) {
+      const items = data.methodologies
+        .filter(method => !advisory || method.id !== "etask_hydra")
+        .map(method => ({
+          title: method.name,
+          icon: method.icon,
+          description: method.description ?? `${method.title} · ${method.languages.join(" / ")}`
+        }));
+      return cards(items, items.length, "method-grid");
+    }
+
+    function chips(primary, secondary = []) {
+      const filled = primary.map(tag => `<span class="tag">${escapeHtml(tag)}</span>`);
+      const tinted = secondary.map(tag => `<span class="tag secondary">${escapeHtml(tag)}</span>`);
+      return `<div class="tags">${filled.concat(tinted).join("")}</div>`;
+    }
+
+    function skills(data, labels, consulting = false) {
+      const groups = consulting
+        ? [["architecture"], ["ai_assisted", "ai_engineering"], ["cloud", "platform"]]
+        : [["ai_assisted"], ["architecture"], ["cloud"], ["leadership"]];
+      const items = groups.map(([key, label = key]) =>
+        `<div><h3>${escapeHtml(labels[label])}</h3>${chips(data.skills[key].primary, data.skills[key].secondary)}</div>`);
+      return `<div class="skills ${consulting ? "columns" : "rows"}">${items.join("")}</div>`;
+    }
+
+    function credentials(data, labels, advisory = false) {
+      const education = data.education.map(item => [item.degree, `${item.institution} · ${item.year}`]);
+      const certifications = data.certifications.map(item => [item.name, `${item.issuer} · ${item.year}`]);
+      const languages = data.personal.languages.map(item => [item.language, item.level]);
+      const groups = advisory
+        ? [["", [education[0]]], ["", [education[1]]], ["", [certifications[2]]]]
+        : [[labels.education, education], [labels.certifications, certifications], [labels.languages, languages]];
+      return `<div class="credentials">${groups.map(([title, items]) => `
+        <div>
+          ${title ? `<h3>${escapeHtml(title)}</h3>` : ""}
+          <ul role="list">${items.map(([name, detail]) => `
+            <li><strong>${escapeHtml(name)}</strong><small>${escapeHtml(detail)}</small></li>
+          `).join("")}</ul>
+        </div>`).join("")}</div>`;
+    }
+
+    function engagements(experience, descriptions, advisory = false) {
+      return cards(Object.entries(descriptions).map(([id, description]) => {
+        const role = experience[id];
+        return {
+          title: role.company,
+          period: advisory ? `${role.title} · ${role.period}` : role.period,
+          description
+        };
+      }), 2, "track-grid");
+    }
+
+    const variantFilenames = { fulltime: "CTO", consulting: "Consulting", advisory: "Advisory" };
+
+    function renderPages(variant, locale) {
+      const data = localize(source, locale.content);
+      const experience = Object.fromEntries(data.experience.map(role => [role.id, role]));
+      const { labels } = locale;
+      const { sections } = labels;
+
+      function intro(highlights) {
+        return header(variant, data)
+          + `<p class="summary">${formatText(data.summaries[variant])}</p>`
+          + metrics(highlights, data.metrics, labels.metrics);
+      }
+
+      const layouts = {
+        fulltime: () => [
+          intro(["delivery_speed_ai", "bug_reduction", "integration_speed_sdd", "engineers_at_peak", "enterprise_deals"])
+            + section(sections.experience, roles(["r5", "dvp", "ubanku", "asesoftware", "togroow"], experience, true)),
+          section(sections.experience_continued, roles(["globant", "digitalware", "etask", "heinsohn", "unisys"], experience), "continued")
+            + section(sections.thought_leadership, methods(data))
+            + section(sections.skills, skills(data, labels.skills))
+            + section(sections.credentials, credentials(data, labels.credentials))
+        ],
+        consulting: () => [
+          intro(["delivery_speed_ai", "integration_speed_sdd", "engineers_scaled", "enterprise_deals"])
+            + section(sections.methodologies, methods(data))
+            + section(sections.services, cards(data.consulting_services, 2, "service-grid"))
+            + section(sections.clients, chips(data.select_clients, data.industries)),
+          section(sections.engagements, engagements(experience, locale.engagements))
+            + section(sections.engagement_model, cards(data.engagement_models, data.engagement_models.length))
+            + section(sections.skills, skills(data, labels.skills, true))
+            + section(sections.consulting_credentials, credentials(data, labels.credentials))
+        ],
+        advisory: () => [
+          intro(["engineers_scaled", "enterprise_deals", "delivery_speed_ai", "companies_founded"])
+            + section(sections.advisory_value, cards(data.advisory_value, 3))
+            + section(sections.executive_track_record, engagements(experience, locale.advisory_engagements, true))
+            + section(sections.intellectual_property, methods(data, true))
+            + section(sections.advisory_credentials, credentials(data, labels.credentials, true))
+        ]
+      };
+
+      const pages = layouts[variant]();
+      if (variant === "advisory") return [page(pages[0], labels.advisory_footer, "advisory")];
+      return pages.map((body, index) =>
+        page(body, labels.pagination.replace("{page}", index + 1).replace("{total}", pages.length)));
+    }
+
+    const palettes = {
+      Terracota: { accent: "#b8632f", rule: "#d4a574", ink: "#1a1a1a" },
+      Océano: { accent: "#28577a", rule: "#83b7c7", ink: "#17232e" },
+      Bosque: { accent: "#35634f", rule: "#98ab7d", ink: "#1f2c26" },
+      Grafito: { accent: "#494851", rule: "#a7a3ae", ink: "#202024" }
+    };
+    const fontFamilies = {
+      Newsreader: '"Newsreader", Georgia, serif',
+      Roboto: '"Roboto", Arial, sans-serif',
+      "DM Sans": '"DM Sans", Arial, sans-serif',
+      Georgia: "Georgia, serif",
+      Arial: "Arial, sans-serif"
+    };
+    const styles = ["editorial", "classic", "minimal"];
+    const defaults = {
+      variant: "fulltime", language: "en", style: "editorial", ...palettes.Terracota,
+      "title-font": "Newsreader", "body-font": "Roboto", "detail-font": "DM Sans"
+    };
+    const colors = ["accent", "rule", "ink"];
+    const fonts = ["title-font", "body-font", "detail-font"];
+    const storageKey = "rafael-pino-cv-v1";
+    const state = { ...defaults };
+
+    try {
+      const saved = JSON.parse(localStorage.getItem(storageKey)) ?? {};
+      if (Object.hasOwn(variantFilenames, saved.variant)) state.variant = saved.variant;
+      if (Object.hasOwn(translations, saved.language)) state.language = saved.language;
+      if (styles.includes(saved.style)) state.style = saved.style;
+      for (const key of colors) if (/^#[0-9a-f]{6}$/i.test(saved[key])) state[key] = saved[key];
+      for (const key of fonts) if (Object.hasOwn(fontFamilies, saved[key])) state[key] = saved[key];
+    } catch {
+      // The editor also works when local storage is unavailable.
+    }
+
+    function save() {
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(state));
+      } catch {
+        // Keep using the current settings for this session.
+      }
+    }
+
+    document.querySelector("#palettes").innerHTML = Object.entries(palettes).map(([name, palette]) => `
+      <button type="button" class="palette" data-palette="${name}">
+        <span class="swatch" aria-hidden="true" style="--swatch-a:${palette.accent};--swatch-b:${palette.rule}"></span>${name}
+      </button>`).join("");
+
+    function setPressed(selector, key, value) {
+      for (const button of document.querySelectorAll(selector)) {
+        button.setAttribute("aria-pressed", button.dataset[key] === value);
+      }
+    }
+
+    function contrastText(hex) {
+      const channels = [1, 3, 5].map(index => parseInt(hex.slice(index, index + 2), 16) / 255);
+      const [r, g, b] = channels.map(value =>
+        value <= .04045 ? value / 12.92 : ((value + .055) / 1.055) ** 2.4);
+      return .2126 * r + .7152 * g + .0722 * b > .179 ? "#1a1a1a" : "#fff";
+    }
+
+    function applyDesign() {
+      cv.dataset.style = state.style;
+      setPressed(".style-options button", "style", state.style);
+
+      for (const key of colors) {
+        document.getElementById(key).value = state[key];
+        document.getElementById(key + "-value").value = state[key].toUpperCase();
+        cv.style.setProperty("--" + key, state[key]);
+      }
+      const defaultAccent = state.accent === palettes.Terracota.accent;
+      cv.style.setProperty("--accent-ink", defaultAccent ? "#fff" : contrastText(state.accent));
+      cv.style.setProperty("--accent-pale", defaultAccent ? "#ffdfcc" : "color-mix(in srgb, var(--accent) 17%, white)");
+      cv.style.setProperty("--accent-dark", defaultAccent ? "#7c370d" : "color-mix(in srgb, var(--accent) 63%, black)");
+      const activePalette = Object.keys(palettes).find(name => colors.every(key => palettes[name][key] === state[key]));
+      setPressed(".palette", "palette", activePalette);
+
+      for (const key of fonts) {
+        document.getElementById(key).value = state[key];
+        cv.style.setProperty("--" + key, fontFamilies[state[key]]);
+      }
+    }
+
+    function renderVariant() {
+      const locale = translations[state.language];
+      const pages = renderPages(state.variant, locale);
+      cv.lang = locale.lang;
+      languageControl.value = state.language;
+      cv.innerHTML = pages.join("");
+      setPressed(".variant", "variant", state.variant);
+      document.querySelector("#page-info").textContent = pages.length === 1 ? "Carta · 1 página" : "Carta · 2 páginas";
+      document.title = `${source.personal.name} - ${locale.labels.variant_names[state.variant]} (${state.language.toUpperCase()})`;
+    }
+
+    for (const button of document.querySelectorAll(".variant")) {
+      button.addEventListener("click", () => {
+        state.variant = button.dataset.variant;
+        renderVariant();
+        save();
+        window.scrollTo(0, 0);
+      });
+    }
+    languageControl.addEventListener("change", () => {
+      state.language = languageControl.value;
+      renderVariant();
+      save();
+    });
+    for (const button of document.querySelectorAll(".palette")) {
+      button.addEventListener("click", () => {
+        Object.assign(state, palettes[button.dataset.palette]);
+        applyDesign();
+        save();
+      });
+    }
+    for (const button of document.querySelectorAll(".style-options button")) {
+      button.addEventListener("click", () => {
+        state.style = button.dataset.style;
+        applyDesign();
+        save();
+      });
+    }
+    for (const key of colors.concat(fonts)) {
+      const control = document.getElementById(key);
+      control.addEventListener(colors.includes(key) ? "input" : "change", () => {
+        state[key] = control.value;
+        applyDesign();
+        save();
+      });
+    }
+    document.querySelector("#reset").addEventListener("click", () => {
+      Object.assign(state, { ...defaults, variant: state.variant, language: state.language });
+      applyDesign();
+      save();
+    });
+
+    document.querySelector("#print").addEventListener("click", async () => {
+      await Promise.race([document.fonts.ready, new Promise(resolve => setTimeout(resolve, 1800))]);
+      window.print();
+    });
+
+    document.querySelector("#download").addEventListener("click", () => {
+      const fontsLink = document.querySelector("#cv-fonts").outerHTML;
+      const cvStyles = document.querySelector("#cv-css").textContent;
+      const html = `<!DOCTYPE html>
+<html lang="${escapeHtml(cv.lang)}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${escapeHtml(document.title)}</title>
+  ${fontsLink}
+  <style>${cvStyles}
+    body { margin: 0; background: #edeae5; }
+    @media screen {
+      .document { margin: 24px auto; zoom: min(1, calc(100vw / 832px)); }
+      .sheet { box-shadow: 0 1px 2px #32291d20, 0 8px 28px #32291d18; }
+    }
+  </style>
+</head>
+<body>
+  <main class="document" data-style="${state.style}" style="${escapeHtml(cv.getAttribute("style"))}">${cv.innerHTML}</main>
+</body>
+</html>`;
+      const url = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = `Rafael-Pino-${variantFilenames[state.variant]}-${state.language.toUpperCase()}.html`;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+
+    function scalePreview() {
+      frame.style.setProperty("--preview-scale", Math.min(1, frame.clientWidth / 816));
+    }
+
+    if (matchMedia("(max-width: 850px)").matches) settings.open = false;
+    applyDesign();
+    renderVariant();
+    scalePreview();
+    new ResizeObserver(scalePreview).observe(frame);
+  </script>
+</body>
+</html>
