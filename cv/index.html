@@ -566,10 +566,6 @@
       <span>CV de Rafael Pino</span>
     </div>
     <div class="top-actions">
-      <button id="download" type="button" class="action" aria-label="Descargar HTML">
-        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-4-4 4 4 4-4M4 16v4h16v-4"/></svg>
-        <span><span class="long-label">Descargar </span>HTML</span>
-      </button>
       <button id="print" type="button" class="action primary" aria-label="Imprimir o guardar PDF">
         <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8V3h12v5M6 17H3V8h18v9h-3M6 14h12v7H6zM17 11h1"/></svg>
         <span><span class="long-label">Imprimir / </span>PDF</span>
@@ -2208,37 +2204,6 @@
       window.print();
     });
 
-    document.querySelector("#download").addEventListener("click", () => {
-      const fontsLink = document.querySelector("#cv-fonts").outerHTML;
-      const cvStyles = document.querySelector("#cv-css").textContent;
-      const html = `<!DOCTYPE html>
-<html lang="${escapeHtml(cv.lang)}">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>${escapeHtml(document.title)}</title>
-  ${fontsLink}
-  <style>${cvStyles}
-    body { margin: 0; background: #edeae5; }
-    @media screen {
-      .document { margin: 24px auto; zoom: min(1, calc(100vw / 832px)); }
-      .sheet { box-shadow: 0 1px 2px #32291d20, 0 8px 28px #32291d18; }
-    }
-  </style>
-</head>
-<body>
-  <main class="document" data-style="${state.style}" style="${escapeHtml(cv.getAttribute("style"))}">${cv.innerHTML}</main>
-</body>
-</html>`;
-      const url = URL.createObjectURL(new Blob([html], { type: "text/html;charset=utf-8" }));
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = `Rafael-Pino-${variantFilenames[state.variant]}-${state.language.toUpperCase()}.html`;
-      document.body.append(link);
-      link.click();
-      link.remove();
-      setTimeout(() => URL.revokeObjectURL(url), 1000);
-    });
 
     function scalePreview() {
       frame.style.setProperty("--preview-scale", Math.min(1, frame.clientWidth / 816));
