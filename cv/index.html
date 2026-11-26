@@ -2061,12 +2061,15 @@
     }
 
     function credentials(data, labels, advisory = false) {
+      const byYear = (a, b) => parseInt(a.year) - parseInt(b.year);
       const education = data.education.map(item => [item.degree, `${item.institution} · ${item.year}`]);
+      const educationSorted = [...data.education].sort(byYear).map(item => [item.degree, `${item.institution} · ${item.year}`]);
+      const certificationsSorted = [...data.certifications].sort(byYear).map(item => [item.name, `${item.issuer} · ${item.year}`]);
       const certifications = data.certifications.map(item => [item.name, `${item.issuer} · ${item.year}`]);
       const languages = data.personal.languages.map(item => [item.language, item.level]);
       const groups = advisory
         ? [["", [education[0]]], ["", [education[1]]], ["", [certifications[2]]]]
-        : [[labels.education, education], [labels.certifications, certifications], [labels.languages, languages]];
+        : [[labels.education, educationSorted], [labels.certifications, certificationsSorted], [labels.languages, languages]];
       return `<div class="credentials">${groups.map(([title, items]) => `
         <div>
           ${title ? `<h3>${escapeHtml(title)}</h3>` : ""}
